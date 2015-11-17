@@ -28,20 +28,16 @@
 
 /* entire container, keeps perspective */
 .flip-container {
-	perspective: 1500px;
-	transform-style: preserve-3d;
+	perspective: 1000;
 }
-	/*  UPDATED! flip the pane when hovered */
-	.flip-container:hover .back {
-		transform: rotateY(0deg);
-	}
-	.flip-container:hover .front {
-	    transform: rotateY(180deg);
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
 	}
 
 .flip-container, .front, .back {
-	min-height: 150px;
-	}
+	height: 150px;
+}
 
 /* flip speed goes here */
 .flipper {
@@ -54,47 +50,28 @@
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-	transition: 0.6s;
-	transform-style: preserve-3d;
 
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	
+	border-style: solid;
+    border-width: 1px;
+    border-color: white;
 }
 
-/*  UPDATED! front pane, placed above back */
+/* front pane, placed above back */
 .front {
 	z-index: 2;
+	/* for firefox 31 */
 	transform: rotateY(0deg);
-	background-color: transparent;
 }
 
 /* back, initially hidden pane */
 .back {
-	transform: rotateY(-180deg);
-	background-color: red;
+	transform: rotateY(180deg);
 }
-
-/* 
-	Some vertical flip updates 
-*/
-.vertical.flip-container {
-	position: relative;
-}
-
-	.vertical .back {
-		transform: rotateX(180deg);
-	}
-
-	.vertical.flip-container:hover .back {
-	    transform: rotateX(0deg);
-	}
-
-	.vertical.flip-container:hover .front {
-	    transform: rotateX(180deg);
-	}
 
 /* ------------------------- Everything above this controls 3D animations */
 
