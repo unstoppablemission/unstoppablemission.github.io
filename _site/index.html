@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Unstoppable Mission</title>
+	<link rel="icon" href="#">
+   
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+</head>
+<body>
+	
+
+<style type="text/css">
+/* ------------------------- Everything below this controls 3D animations */
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1500px;
+	transform-style: preserve-3d;
+	border-style: solid;
+    border-color: white;
+    border-width: .5px; 
+}
+	/*  UPDATED! flip the pane when hovered */
+	.flip-container:hover .back {
+		transform: rotateY(0deg);
+	}
+	.flip-container:hover .front {
+	    transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	min-height: 150px;
+	}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	
+}
+
+/*  UPDATED! front pane, placed above back */
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+	background-color: transparent;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(-180deg);
+	background-color: red;
+}
+
+/* 
+	Some vertical flip updates 
+*/
+.vertical.flip-container {
+	position: relative;
+}
+
+	.vertical .back {
+		transform: rotateX(180deg);
+	}
+
+	.vertical.flip-container:hover .back {
+	    transform: rotateX(0deg);
+	}
+
+	.vertical.flip-container:hover .front {
+	    transform: rotateX(180deg);
+	}
+
+/* ------------------------- Everything above this controls 3D animations */
+
+body   {
+	background-image:  url(../img/unstoppable-background.svg);
+	color: #fff;
+	}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+	}
+
+</style>
+
+
+
+	<header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Unstoppable Mission</h1>
+                <hr>
+                <h2><h2>
+                
+            </div>
+        </div>
+    </header>    
+        
+<!-- flipping div panels for sections on website -->
+<section id="about">
+  <div class="container-fluid">
+    <div class="row no-gutter">
+      <div class="col-xs-4">
+  		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+				<!-- front content -->
+				<h1>Aid</h1>
+				</div>
+				<div class="back">
+				<!-- back content -->
+				<p>goodbye to the middle of the world sonsy</p>
+				</div>
+			</div>
+  		</div>
+	  </div>
+	  <div class="col-xs-4">
+  		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+				<!-- front content -->
+				<h1>Help</h1>				
+				</div>
+				<div class="back">
+				<!-- back content -->
+				<p>goodbye to the middle of the world sonsy</p>
+				</div>
+			</div>
+  		</div>
+	  </div><div class="col-xs-4">
+  		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+				<!-- front content -->
+				<h1>Advocate</h1>
+				</div>
+				<div class="back">
+				<!-- back content -->
+				<p>goodbye to the middle of the world sonsy</p>
+				</div>
+			</div>
+  		</div>
+	  </div><div class="col-xs-4">
+  		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+				<!-- front content -->
+				<h1>Local</h1>
+				</div>
+				<div class="back">
+				<!-- back content -->
+				<p>goodbye to the middle of the world sonsy</p>
+				</div>
+			</div>
+  		</div>
+	  </div><div class="col-xs-4">
+  		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+				<!-- front content -->
+				<h1>Regional</h1>
+				</div>
+				<div class="back">
+				<!-- back content -->
+				<p>goodbye to the middle of the world sonsy</p>
+				</div>
+			</div>
+  		</div>
+	  </div><div class="col-xs-4">
+  		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+			<div class="flipper">
+				<div class="front">
+				<!-- front content -->
+				<h1>Global</h1>
+				</div>
+				<div class="back">
+				<!-- back content -->
+				<p>goodbye to the middle of the world sonsy</p>
+				</div>
+			</div>
+  		</div>
+	  </div>
+	</div>
+  </div>
+</section>
+	
+	
+</body>
+</html>
