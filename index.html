@@ -30,6 +30,9 @@
 .flip-container {
 	perspective: 1500px;
 	transform-style: preserve-3d;
+	border-style: solid;
+    border-color: white;
+    border-width: .5px; 
 }
 	/*  UPDATED! flip the pane when hovered */
 	.flip-container:hover .back {
@@ -68,7 +71,7 @@
 .front {
 	z-index: 2;
 	transform: rotateY(0deg);
-	background-color: blue;
+	background-color: transparent;
 }
 
 /* back, initially hidden pane */
@@ -100,6 +103,7 @@
 
 body   {
 	background-image:  url(../img/unstoppable-background.svg);
+	color: #fff;
 	}
 
 .no-gutter > [class*=col-] {
