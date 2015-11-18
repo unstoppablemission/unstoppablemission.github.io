@@ -103,10 +103,14 @@
 body   {
 	height: 100%;
 	width: 100%;
-	background-image:  url(../img/unstoppable-background.jpg);
-	background-size: cover;
+	background-image: url(../img/unstoppable-background-no-white-line.jpg);
+	background-size: auto 77%;
+	background-position: 10% 90%;
+	background-repeat: no-repeat;
+	background-color: black;
 	color: #fff;
 	}
+
 
 .no-gutter > [class*=col-] {
     padding-right: 0;
@@ -115,26 +119,52 @@ body   {
 
 #logo  {
 	position: relative;
-	width: 25%;
+	width: 300px;
 	left: 50%;
-	margin-left: -12.5%;
+	margin-left: -150px;
+	margin-top: 20px;
 	}
 
 .aid {
 	background-image: url(../img/kids-faces.jpg);
-	background-size: 100% auto;
+	background-size: cover;
 	}
 
 .help {
 	background-image: url(../img/kid-face.jpg);
-	background-size: 100% auto;
+	background-size: cover;
 	}
 
 .advocate {
 	background-image: url(../img/handholding-cross.jpg);
-	background-size: 100% auto;
+	background-size: cover;
 	}
 
+h2  {
+	padding-left: 20px;
+	}
+	
+
+	
+@media(min-width:768px) {
+	
+	body   {
+	background-image: url(../img/unstoppable-background-no-white-line.jpg);
+	background-size: cover;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	background-color: black;
+	color: #fff;
+	}
+	
+	#logo  {
+	position: relative;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: 45px;
+	}
+}
 </style>
 
 
@@ -142,7 +172,7 @@ body   {
 	<header>
         <div class="header-content">
             <div class="header-content-inner">
-            	<img id="logo" src="../img/unstoppable-logo-white.svg" />
+            	<img id="logo" src="../img/unstoppable-logo-white-shadows4.svg" />
                
                 <h2><h2>
                 
@@ -159,7 +189,7 @@ body   {
 			<div class="flipper">
 				<div class="front">
 				<!-- front content -->
-				<h2>AID</h2>
+				<h2>AID</h2><hr>
 				</div>
 				<div class="back aid">
 				<!-- back content -->
@@ -173,7 +203,7 @@ body   {
 			<div class="flipper">
 				<div class="front">
 				<!-- front content -->
-				<h2>HELP</h2>				
+				<h2>HELP</h2><hr>	
 				</div>
 				<div class="back help">
 				<!-- back content -->
@@ -186,7 +216,7 @@ body   {
 			<div class="flipper">
 				<div class="front">
 				<!-- front content -->
-				<h2>ADVOCATE</h2>
+				<h2>ADVOCATE</h2><hr>
 				</div>
 				<div class="back advocate">
 				<!-- back content -->
@@ -200,6 +230,7 @@ body   {
 				<div class="front">
 				<!-- front content -->
 				<h2>LOCAL</h2>
+				<hr>
 				</div>
 				<div class="back">
 				<!-- back content -->
@@ -213,6 +244,7 @@ body   {
 				<div class="front">
 				<!-- front content -->
 				<h2>REGIONAL</h2>
+				<hr>
 				</div>
 				<div class="back">
 				<!-- back content -->
@@ -226,6 +258,7 @@ body   {
 				<div class="front">
 				<!-- front content -->
 				<h2>GLOBAL</h2>
+				<hr>
 				</div>
 				<div class="back">
 				<!-- back content -->
