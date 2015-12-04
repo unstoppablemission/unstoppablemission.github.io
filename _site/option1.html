@@ -36,14 +36,19 @@ html,body{
 }
 
 body   {
+	background-image: url(../img/unstoppable-background-no-white-line.jpg);
+	background-size: auto 77%;
+	background-position: 10% 90%;
+	background-repeat: no-repeat;
+	background-color: black;
+	color: #fff;
 	font-family: 'Raleway','Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 300;
 	}
 	
 a 	{
 	text-decoration: none;
-	color: #d67827;
-	
+	color: #000;
 	}
 
 /* ------------------------- Everything below this controls 3D animations */
@@ -98,8 +103,8 @@ a 	{
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(-180deg);
-	background-color: black;
-	color: white;
+	background-color: red;
+	font-weight: bold;
 	}
 
 /* 
@@ -124,16 +129,8 @@ a 	{
 
 /* ------------------------- Everything above this controls 3D animations */
 
-header {
-	height: 75%;
-	background-image: url(../img/unstoppable-background-no-white-line.jpg);
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-color: black;
-	color: #fff;
-	}
-	
+
+
 .no-gutter > [class*=col-] {
     padding-right: 0;
     padding-left: 0;
@@ -144,7 +141,7 @@ header {
 	width: 300px;
 	left: 50%;
 	margin-left: -150px;
-	margin-top: 8%;
+	margin-top: 20px;
 	}
 
 .aid {
@@ -184,7 +181,8 @@ h2  {
 	text-align: center;
 	font-size: 36pt;
 	font-weight: 700;
-   	
+   	text-shadow: 2px 2px 4px #000000,
+   	 			-2px -2px 4px #000000;
 	}
 
 hr  {
@@ -206,7 +204,11 @@ hr  {
 	}
 	
 	#logo  {
-	
+	position: relative;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: 15px;
 	}
 	
 	#about {
@@ -217,7 +219,8 @@ hr  {
 @media(min-width:1300px) {
 	
 	#logo  {
-	
+	margin-top: 25px;
+	margin-bottom: 20px;
 	}
 
 .flip-container, .front, .back {
@@ -248,12 +251,12 @@ hr  {
       <div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front aid">
+				<div class="front">
 				<!-- front content -->
 				<h2>AID</h2>
-				
+				<hr>
 				</div>
-				<div class="back">
+				<div class="back aid">
 				<!-- back content -->
 				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
 				</div>
@@ -263,26 +266,26 @@ hr  {
 	  <div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front develop">
+				<div class="front">
 				<!-- front content -->
 				<h2>DEVELOP</h2>
-					
+				<hr>	
 				</div>
-				<div class="back">
+				<div class="back develop">
 				<!-- back content -->
-				<p><a href="http://rustyhutchison.com" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
 				</div>
 			</div>
   		</div>
 	  </div><div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front advocate">
+				<div class="front">
 				<!-- front content -->
 				<h2>ADVOCATE</h2>
-				
+				<hr>
 				</div>
-				<div class="back ">
+				<div class="back advocate">
 				<!-- back content -->
 				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
 				</div>
@@ -291,42 +294,45 @@ hr  {
 	  </div><div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front local">
+				<div class="front">
 				<!-- front content -->
 				<h2>LOCAL</h2>
-				
+				<hr>
 				</div>
-				<div class="back ">
+				<div class="back local">
 				<!-- back content -->
-				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />SOUIX CITY</a></p>
+				<p>description and link to more info or another page</p>
 				</div>
 			</div>
   		</div>
 	  </div><div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front regional">
+				<div class="front">
 				<!-- front content -->
 				<h2>REGIONAL</h2>
-				
+				<hr>
 				</div>
-				<div class="back ">
+				<div class="back regional">
 				<!-- back content -->
-				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />HAITI</a></p>
+				<p>description and link to more info or another page</p>
 				</div>
 			</div>
   		</div>
 	  </div><div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front global">
+				<div class="front">
 				<!-- front content -->
 				<h2>GLOBAL</h2>
-				
+				<hr>
 				</div>
-				<div class="back ">
+				<div class="back global">
 				<!-- back content -->
-				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />GHANA</a></p>
+				<p>description and link to more info or another page</p>
 				</div>
 			</div>
   		</div>
