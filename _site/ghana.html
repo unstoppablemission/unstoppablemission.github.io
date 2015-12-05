@@ -25,13 +25,17 @@
 
 	<style type="text/css">
 
+*  {
+	border: 2px solid red;
+	}
+
 html,body{
-    height: 100vh;
-    width: 100vh:
+    height: 100%;
+    width: 100%;
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 body   {
@@ -45,30 +49,32 @@ a 	{
 	text-decoration: none;
 	color: #d67827;
 	}
+.col-md-9  {
+	height: 100%;
+	}
 	
 h1  {	
 	text-align: center;
 	font-size: 36pt;
 	font-weight: 700;
-	position: absolute;
-	top: 25%;
-	right: 25%;
+	
+	top: 125px;
+	left: 25%;
 	}
 	
 header  {
-	height: 70%;
-	background: gray;
+	
+	background: black;
 	position: relative;
-	background-image: url(//localhost/Users/amyhutch/Box Sync/Rusty/RW Dezign/Jake Sullivan/Unstoppable Mission/rustyhutchison.github.io/img/ghana-header.jpg);
-	background-position: center;
+	background-image: url(https://rustyhutchison.github.io/img/ghana-header.jpg);
+	background-size: auto 175%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	}
 	
 #logo  {
 	position: relative;
-	width: 300px;
-	left: 15%;
-	margin-left: -150px;
-	margin-top: 9%;
+	max-width: 300px;
 	}
 	
 	</style>
@@ -77,8 +83,14 @@ header  {
 <body>
 	<header>
 		<div class="container header-content">
-			<img id="logo" src="file://localhost/Users/amyhutch/Box Sync/Rusty/RW Dezign/Jake Sullivan/Unstoppable Mission/rustyhutchison.github.io/img/unstoppable-logo-white-shadows4.svg" />
-			<h1>Ghana, Africa</h1>
+			<div class="row no-gutter">
+				<div class="col-md-3">
+					<img id="logo" class="img-responsive" src="file://localhost/Users/amyhutch/Box Sync/Rusty/RW Dezign/Jake Sullivan/Unstoppable Mission/rustyhutchison.github.io/img/unstoppable-logo-white-shadows4.svg" />
+				</div>
+				<div class="col-md-9">
+					<h1>Ghana, Africa</h1>
+				</div>
+			<div>
 		</div>
 	</header>
 
