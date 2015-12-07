@@ -24,7 +24,8 @@
 	<!-- Custom Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
+	<link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Homemade+Apple' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 
 * {
@@ -49,7 +50,7 @@ body   {
     font-weight: 300;
     color: white;
     background-color: #000;
-    font-size: 17px;
+    font-size: 16px;
 	}
 	
 a 	{
@@ -57,11 +58,17 @@ a 	{
 	color: #d67827;
 	}
 
+
+
 .row {
 	height: 100%;
 	position: relative;
 	}
 
+h1 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	}
 
 header h1  {	
 	text-align: center;
@@ -72,10 +79,14 @@ header h1  {
    	 			-2px -2px 20px #000;
 	}
 
-p   {
-	text-align: justify;
+.btn {
+	margin-bottom: 15px;
 	}
 
+.btn-info  {
+	background-color: #d67827;
+	border-color: #d67827;
+	}
 	
 header  {
 	background: black;
@@ -90,7 +101,10 @@ header  {
 	max-width: 300px;
 	margin: 0px auto;
 	}
-
+.scripture  {
+	font-family: 'Calligraffitti', cursive;
+	}
+	
 #aid-header {
 /*	background-image: url(https://rustyhutchison.github.io/img/ghana/aid.jpg);  */
 	background-size: cover;
@@ -99,15 +113,17 @@ header  {
 	
 	}
 
-#aid-header h1, #develop-header h1, #advocate-header h1 {
-	position: relative;
-	left: 15px;
+#aid-header h1, #develop-header h1, #advocate h1 {
 	font-size: 50pt;
 	}
 
 #aid, #develop, #advocate  {
 	border-bottom: thin solid gray;
 	padding-bottom: 30px;
+	}
+
+#advocate h1{
+	text-align: left;
 	}
 
 .collapse  {
@@ -121,10 +137,21 @@ header  {
 	background-repeat: no-repeat;
 	height: 60%;
 	}	
+	
+#develop .col-sm-3 {
+	}
+	
+	
+
 @media(min-width:630px) {
 	#logo  {
 	max-width: 300px;
 	margin: auto 0px;
+	}
+	
+	#aid-header h1, #develop-header h1, #advocate h1 {
+	position: relative;
+	left: 15px;
 	}
 }
 	
@@ -141,6 +168,10 @@ header  {
 	background-size: auto 175%;
 	background-position: center;
 	background-repeat: no-repeat;
+	}
+	
+	#develop .col-sm-3 {
+	width: 27.5%;
 	}
 }
 
@@ -175,16 +206,21 @@ header  {
 	<section id="advocate">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
-					<h1>ADVOCATE</h1>
+				<div class="col-md-10 col-md-offset-1 text-center">
+				<h1>ADVOCATE</h1>
 					<p>We believe that as Christians we have a responsibility to be a voice for the oppressed, a place for the
 					orphan, and relief for the widow.  The Lord’s Word is filled with this command.</p>
-					<p>Isaiah 1:17 – Learn to do right; seek justice.  Defend the oppressed.  Take up the cause of the 
+				<div class="scripture">
+					<h3>Isaiah 1:17</h3>
+					<p> Learn to do right; seek justice.  Defend the oppressed.  Take up the cause of the 
 					fatherless; please the case of the widow.</p>  
-					<p>Isaiah 58:10 – If you spend yourselves in behalf of the hungry and satisfy the needs of the oppressed, 
+					<h3>Isaiah 58:10</h3>
+					<p>If you spend yourselves in behalf of the hungry and satisfy the needs of the oppressed, 
 					then your light will rise in the darkness, and your night will become like the noonday.</p>
-					<p>James 1:27 – Religion that God our Father accepts as pure and faultless is this: to look after the 
-					orphan and widows in their distress and to keep oneself from being polluted by the world.</p>
+					<h3>James 1:27</h3>
+					<p>Religion that God our Father accepts as pure and faultless is this: to look after the 
+					orphan and widows in their distress and to keep oneself from being polluted by the world.</p><br>
+				</div>
 					<p>When you join us on mission in Ghana, Africa not only are you choosing to be a voice for the oppressed 
 					and the loving arms for the orphan but you are choosing to be a light of advocacy to your local church, in 
 					your neighborhoods, and in your work places.  When we put our faith in Christ we have also made a 
@@ -200,7 +236,7 @@ header  {
 	<section id="aid-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 aid-header">
+				<div class="col-sm-10 col-sm-offset-1 aid-header">
 					<h1>AID</h1>
 				</div>
 			</div>
@@ -210,7 +246,7 @@ header  {
 	<section id="aid">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-5 col-sm-offset-1">
 					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/orphan-care.jpg">
 					<h2>Orphan Care</h2>
 					<p>In August of 2014 the Kingdom Cares Mission Center opened in Asikuma, Ghana to meet the need of the orphan.  The Kingdom Cares Mission Center works directly with Social Welfare as well as other outreach organizations to meet the long term care of abandoned children that have become orphaned.  </p>
@@ -219,7 +255,7 @@ header  {
 						<p>On average the Kingdom Cares Mission Center cares for between 20-40 children by providing them housing, food, education, and overall daily care.  Many of the children that enter into the Mission Center are also placed on the track for permanent adoption.   There are short term and long term mission opportunities available.  Please contact Jake Sullivan at 515-291-1542 or via email jakes@sunnybrookchurch.org  if you are interested in getting more involved.  In 2016 we will be starting a similar orphan ministry in Cape Coast, Ghana and will have more information as this program becomes solidified.</p>
 					</div>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-5">
 					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/rehab-discipleship.jpg">
 					<h2>Rehab/Discipleship Programs</h2>
 					<p>In 2014 during one of our many trips to Cape Coast, Ghana we began an outreach program for those that have become addicted to drugs and/or have been forced into prostitution and sex trafficking due to poverty.  As we began to reach out to the oppressed and the addicted it became obvious that simply sharing the Gospel was only the beginning.</p>
@@ -235,7 +271,7 @@ header  {
 	<section id="develop-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 develop-header">
+				<div class="col-sm-10 col-sm-offset-1 develop-header">
 					<h1>DEVELOP</h1>
 				</div>
 			</div>
@@ -245,10 +281,10 @@ header  {
 	<section id="develop">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-sm-3 col-sm-offset-1">
 					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/orphan-care.jpg">
 					<h2>Education</h2>
-					<p>In Ghana, Africa we have focused on educational development in three particular communities: Asikuma, Tsipasi, and Cape Coast.  
+					<p>In Ghana, Africa we have focused on educational development in three particular communities: Asikuma, Tsipasi, and Cape Coast.</p>  
 					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#education">More Info</button>
 					<div id="education" class="collapse">
 						<p>In Asikuma, Ghana we help to operate a newly developed school that focuses on educating youth from a
@@ -269,7 +305,7 @@ header  {
 						515-291-1542 or via email jakes@sunnybrookchurch.org if you are interested in getting more involved.</p>
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/rehab-discipleship.jpg">
 					<h2>Agriculture</h2>
 					<p>In January of 2015 we began a partnership with Agrihope (www.agrihope.org) with the goal of making the 
@@ -288,7 +324,7 @@ header  {
 						at 515-291-1542 or via email jakes@sunnybrookchurch.org if you are interested in getting more involved.</p>  
 					</div>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-sm-3">
 					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/rehab-discipleship.jpg">
 					<h2>Small Business</h2>
 					<p>In Cape Coast, Ghana a major part of the rehab/discipleship program is through small business development.</p>					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#business">More Info</button>
