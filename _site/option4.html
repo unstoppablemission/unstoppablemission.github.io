@@ -31,23 +31,25 @@
 <style type="text/css">
 
 html,body{
-    height: 100vh;
-    width: 100vh:
-}
-
-body {
-    min-height: 100vh;
+    height: 100%;
+    width: 100%:
 }
 
 body   {
-	font-family: 'Open Sans','Raleway','Helvetica Neue',Arial,sans-serif;
+	background-image: url(../img/unstoppable-background-no-white-line.jpg);
+	background-size: auto 77%;
+	background-position: 10% 90%;
+	background-repeat: no-repeat;
+	background-color: black;
+	color: #fff;
+	font-family: 'Raleway','Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 300;
 	}
 	
 a 	{
 	text-decoration: none;
 	color: #d67827;
-	
+	font-size: 50pt;
 	}
 
 /* ------------------------- Everything below this controls 3D animations */
@@ -102,8 +104,7 @@ a 	{
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(-180deg);
-	background-color: black;
-	color: white;
+	background-color: red;
 	}
 
 /* 
@@ -128,16 +129,8 @@ a 	{
 
 /* ------------------------- Everything above this controls 3D animations */
 
-header {
-	height: 75%;
-	background-image: url(../img/unstoppable-background-no-white-line.jpg);
-	background-size: cover;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-	background-color: black;
-	color: #fff;
-	}
-	
+
+
 .no-gutter > [class*=col-] {
     padding-right: 0;
     padding-left: 0;
@@ -148,7 +141,7 @@ header {
 	width: 300px;
 	left: 50%;
 	margin-left: -150px;
-	margin-top: 9%;
+	margin-top: 20px;
 	}
 
 .aid {
@@ -178,7 +171,7 @@ header {
 	}
 
 .global {
-	background-image: url(../img/sad-kid-field.jpg);
+	background-image: url(../img/teaching-kids.jpg);
 	background-size: 100% auto;
 	background-position: center;
 	}
@@ -187,8 +180,9 @@ h2  {
 	
 	text-align: center;
 	font-size: 36pt;
-	font-weight: 700;
-   	
+	font-weight: 400;
+   	text-shadow: 2px 2px 4px #000000,
+   	 			-2px -2px 4px #000000;
 	}
 
 hr  {
@@ -208,7 +202,14 @@ hr  {
 	background-color: black;
 	color: #fff;
 	}
-
+	
+	#logo  {
+	position: relative;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	margin-top: 15px;
+	}
 	
 	#about {
 	height:50%;
@@ -217,7 +218,10 @@ hr  {
 
 @media(min-width:1300px) {
 	
-
+	#logo  {
+	margin-top: 25px;
+	margin-bottom: 20px;
+	}
 
 .flip-container, .front, .back {
 	min-height: 165px;
@@ -247,14 +251,14 @@ hr  {
       <div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front aid">
+				<div class="front">
 				<!-- front content -->
 				<h2>AID</h2>
-				
+				<hr>
 				</div>
-				<div class="back">
+				<div class="back aid">
 				<!-- back content -->
-				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />AID</a></p>
 				</div>
 			</div>
   		</div>
@@ -262,70 +266,70 @@ hr  {
 	  <div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front develop">
+				<div class="front">
 				<!-- front content -->
 				<h2>DEVELOP</h2>
-					
+				<hr>	
 				</div>
-				<div class="back">
+				<div class="back develop">
 				<!-- back content -->
-				<p><a href="http://rustyhutchison.com" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.com" target="_blank" />DEVELOP</a></p>
 				</div>
 			</div>
   		</div>
 	  </div><div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front advocate">
+				<div class="front">
 				<!-- front content -->
 				<h2>ADVOCATE</h2>
-				
+				<hr>
 				</div>
-				<div class="back ">
+				<div class="back advocate">
 				<!-- back content -->
-				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />ADVOCATE</a></p>
 				</div>
 			</div>
   		</div>
 	  </div><div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front local">
+				<div class="front">
 				<!-- front content -->
 				<h2>LOCAL</h2>
-				
+				<hr>
 				</div>
-				<div class="back ">
+				<div class="back local">
 				<!-- back content -->
-				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />SOUIX CITY</a></p>
 				</div>
 			</div>
   		</div>
 	  </div><div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front regional">
+				<div class="front">
 				<!-- front content -->
 				<h2>REGIONAL</h2>
-				
+				<hr>
 				</div>
-				<div class="back ">
+				<div class="back regional">
 				<!-- back content -->
-				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />HAITI</a></p>
 				</div>
 			</div>
   		</div>
 	  </div><div class="col-xs-12 col-sm-4">
   		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 			<div class="flipper">
-				<div class="front global">
+				<div class="front">
 				<!-- front content -->
 				<h2>GLOBAL</h2>
-				
+				<hr>
 				</div>
-				<div class="back ">
+				<div class="back global">
 				<!-- back content -->
-				<p><a href="ghana" target="_blank" />description and link to more info or another page</a></p>
+				<p><a href="http://rustyhutchison.github.io/option2" target="_blank" />GHANA</a></p>
 				</div>
 			</div>
   		</div>
