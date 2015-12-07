@@ -60,7 +60,7 @@ a 	{
 	}
 
 
-h1  {	
+header h1  {	
 	text-align: center;
 	font-size: 36pt;
 	font-weight: 700;
@@ -88,14 +88,18 @@ header  {
 	}
 
 .aid-header {
-	background-image: url(../img/ghana/aid.jpg);
-	background-size: auto 175%;
-	background-position: center;
+	background-image: url(https://rustyhutchison.github.io/img/ghana/aid.jpg);
+	background-size: 100% auto;
+	background-position: 50% 80%;
 	background-repeat: no-repeat;
 	}
 
-#aid h1 {
+#aid-header h1 {
+	margin-left: 5%;
 	text-align: left;
+	color: #000;
+	font-size: 36pt;
+	font-weight: 700;
 	margin: 0px;
 	font-size: 75pt;
 	}
@@ -141,13 +145,18 @@ header  {
 		</div>
 	</header>
 
-	<section id="aid">
-		<div class="container">
+	<section id="aid-header">
+		<div class="container-fluid">
 			<div class="row no-gutter">
 				<div class="col-sm-12 aid-header">
 					<h1>AID</h1>
 				</div>
 			</div>
+		</div>		
+	</section>
+			
+	<section id="aid">
+		<div class="container">
 			<div class="row no-gutter">
 				<div class="col-sm-6">
 					<img class="img-responsive" src="img/#">
