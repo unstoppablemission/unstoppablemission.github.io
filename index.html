@@ -2,7 +2,6 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -24,19 +23,18 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-</head>
-<body>
 	
 
 <style type="text/css">
 
-html,body{
-    height: 100vh;
-    width: 100vh:
+html, body {
+    width: 100%;
+    height: 100%;
 }
 
 body {
-    min-height: 100vh;
+    background-color: black;
+	color: #fff;
 }
 
 body   {
@@ -130,7 +128,7 @@ a 	{
 
 header {
 	height: 75%;
-	background-image: url(../img/unstoppable-background-no-white-line.jpg);
+	background-image: url(img/unstoppable-background-no-white-line.jpg);
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
@@ -144,11 +142,11 @@ header {
 	}
 
 #logo  {
-	position: relative;
+	position: absolute;
+	top: 16%;
 	width: 300px;
 	left: 50%;
 	margin-left: -150px;
-	margin-top: 9%;
 	}
 
 .aid {
@@ -196,22 +194,19 @@ hr  {
 	}
 
 	
-@media(min-width:768px) {
-	
-	body   {
-	width: 100%;
-    height: 100%;
-	background-image: url(../img/unstoppable-background-no-white-line.jpg);
-	background-size: cover;
-	background-position: 50% 0%;
-	background-repeat: no-repeat;
-	background-color: black;
-	color: #fff;
+footer {
+	margin-top: 100px;
 	}
 
+footer img {
+	height: 150px;
+	}
+
+
+@media(min-width:768px) {
 	
-	#about {
-	height:50%;
+footer .col-sm-3 {
+	width: 27.5%;
 	}
 }
 
@@ -227,16 +222,12 @@ hr  {
 
 </style>
 
+</head>
+<body>
 
-
-	<header>
-        <div class="header-content">
-            <div class="header-content-inner">
-            	<img id="logo" src="../img/unstoppable-logo-white-shadows4.svg" />
-               
-                <h2><h2>
-                
-            </div>
+	<header id="top">
+        <div class="container">
+            <img id="logo" src="../img/unstoppable-logo-white-shadows4.svg" />                
         </div>
     </header>    
         
@@ -333,6 +324,34 @@ hr  {
 	</div>
   </div>
 </section>
+
+	<footer class="text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-sm-offset-1">
+					<a class="page-scroll" href="#top">
+					<h4></h4>
+					<img src="img/unstoppable-logo-white-shadows4.svg" />
+					<p>...is a ministry of:</p>
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<a href="http://www.sunnybrookchurch.org" target="_blank">
+					<img src="https://rustyhutchison.github.io/img/sunnybrook-logo.png">
+					<h4>Sunnybrook<br>Community Church</h4>
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<h4></h4>
+					<p><a href="http://www.sunnybrookchurch.org" target="_blank">http://www.sunnybrookchurch.org</a></p>
+					<p>5601 Sunnybrook Drive<br>
+					Sioux City, IA, 51106<br>
+					ph: 712-276-5814</p>
+					<p>© 2015 Sunnybrook Community Church. All Rights Reserved.</p>
+				</div>		
+			</div>		
+		</div>	
+	</footer>
 	
 	
 </body>
