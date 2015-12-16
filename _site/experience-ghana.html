@@ -106,7 +106,7 @@ header h1  {
 
 header  {
 	background: black;
-	background-image: url(img/ghana/ghana-map-header.jpg);
+	background-image: url(https://rustyhutchison.github.io/img/ghana/ghana-map-header.jpg);
 	background-size: auto 175%;
 	background-position: 70% 50%;
 	background-repeat: no-repeat;
@@ -116,6 +116,48 @@ header  {
 	max-width: 300px;
 	margin: 0px auto;
 	}
+	
+@media(min-width:630px) {
+	#logo  {
+	max-width: 300px;
+	margin: auto 0px;
+	}
+	
+	#aid-header h1, #develop-header h1, #advocate h1 {
+	position: relative;
+	left: 15px;
+	}
+}
+	
+@media(min-width:768px) {
+	.col-sm-9  {
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+	}
+	
+	header  {
+	background: black;
+	background-image: url(img/ghana/ghana-map-header.jpg);
+	background-size: auto 175%;
+	background-position: 85% 50%;
+	background-repeat: no-repeat;
+	}
+	
+	#develop .col-sm-3 {
+	width: 27.5%;
+	}
+	
+	footer .col-sm-3 {
+	width: 27.5%;
+	}
+}
+
+@media(min-width:1200px) {
+	header .col-sm-3  {
+	margin-left: 70px;
+	}
+}
 	
 	</style>
 </head>
