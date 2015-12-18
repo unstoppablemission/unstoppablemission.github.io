@@ -106,13 +106,18 @@ header h1  {
 	}
 
 header  {
+	position: relative;
 	background: black;
 	background-image: url(img/ghana/ghana-map-header.jpg);
 	background-size: auto 175%;
 	background-position: 70% 50%;
 	background-repeat: no-repeat;
 	}
-
+.header-content a {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	}
 		
 #logo  {
 	max-width: 300px;
@@ -218,7 +223,7 @@ footer img {
 		<div class="container header-content">
 			<div class="row">
 				<a href="index">
-				<div class="col-sm-3" onclick="location.href='index';" style="cursor: pointer;">
+				<div class="col-sm-3">
 					<img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" />
 				</div></a>
 				<div class="col-sm-9">
