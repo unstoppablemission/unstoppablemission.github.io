@@ -126,6 +126,8 @@ header  {
 #logo  {
 	max-width: 300px;
 	margin: 0px auto;
+	position: relative;
+	z-index: 1000;
 	}
 	
 @media(min-width:630px) {
@@ -182,7 +184,7 @@ header  {
 		<div class="container header-content">
 			<div class="row">
 				<div class="col-sm-3">
-					<a href="index"><img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" /></a>
+					<img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" style="cursor: pointer;" onclick="window.location='index';" />
 				</div>
 				<div class="col-sm-9">
 					<h1>GHANA:<BR>MISSION TRIPS</h1>
