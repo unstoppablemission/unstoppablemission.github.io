@@ -1,0 +1,435 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Unstoppable Mission Regional - Haiti: Aid, Develop, and Advocate">
+    <meta name="Rusty Hutchison" content="www.rustyhutchison.com">
+	<link rel="icon" href="../img/UM-logo.png">
+
+    <title>Unstoppable Mission</title>
+	<link rel="icon" href="#">
+   
+    <!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+
+* {
+    box-sizing: border-box;
+	}
+
+*  {
+	/* border: 1px solid red; --> */
+	}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+body   {
+	font-family: 'Raleway','Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #000;
+    font-size: 16px;
+	}
+	
+a 	{
+	text-decoration: none;
+	color: #d67827;
+	}
+
+
+
+.row {
+	height: 100%;
+	position: relative;
+	
+	}
+
+h1 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	}
+
+header h1  {	
+	text-align: center;
+	font-size: 36pt;
+	font-weight: 400;
+	width: 100%;
+	text-shadow: 2px 2px 5px #000,
+   	 			-2px -2px 5px #000;
+   	margin-bottom: 15px;
+	}
+
+.btn {
+	margin-bottom: 15px;
+	}
+
+.btn, .btn-info  {
+	background-color: #d67827;
+	border-color: #d67827;
+	}
+
+.btn, .btn-info:hover {
+    color: #fff;
+    background-color: #d67820;
+    border-color: #d67820;
+    }
+    
+.btn, .btn-info.focus, .btn-info:focus {
+    color: #fff;
+    background-color: #d67827;
+	border-color: #d67827;
+	}
+
+header  {
+	background: black;
+	background-image: url(https://unstoppablemission.github.io/img/haiti/haiti-header.jpg);
+	background-size: auto 100%;
+	background-position: 35% 50%;
+	background-repeat: no-repeat;
+	}
+	
+#logo  {
+	position: relative;
+	max-width: 300px;
+	margin: 20px auto;
+	z-index: 1000;
+	}
+
+.advocate-highlight  {
+	font-family: 'Julius Sans One', sans-serif;
+	border: 1px solid gray;
+	padding: 5px 30px;
+	margin: 20px auto 20px auto;
+	color: #d67827;
+	}
+
+.haiti a {
+	text-decoration: none;
+	color: #fff;
+	}
+
+#aid-header h1, #develop-header h1, #advocate h1 {
+	font-size: 50pt;
+	}
+
+#aid, #develop, #advocate  {
+	border-bottom: thin solid gray;
+	padding-bottom: 30px;
+	}
+
+#advocate h1{
+	text-align: left;
+	}
+	
+#advocate p{
+	margin: 10px 0px;
+	}
+
+#advocate-header {
+	background-image: url(https://unstoppablemission.github.io/img/sioux-city/sioux-header-collage.jpg);
+	background-size: cover;
+	background-position: 50% 25%;
+	background-repeat: no-repeat;
+	height: 60%;
+	}	
+
+
+
+footer {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	}
+
+footer img {
+	height: 150px;
+	}
+
+[class*="col-"]{ 
+	padding-bottom: 20px;
+	}
+
+@media(min-width:630px) {
+	#logo  {
+	max-width: 300px;
+	margin: auto 0px;
+	}
+	
+	#aid-header h1, #develop-header h1, #advocate h1 {
+	position: relative;
+	left: 15px;
+	}
+}
+	
+@media(min-width:768px) {
+	.col-sm-9  {
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+	}
+	
+	header  {
+	background-size: auto 100%;
+	background-position: 85% 50%;
+	background-repeat: no-repeat;
+	}
+	
+	#develop .col-sm-3 {
+	width: 27.5%;
+	}
+	
+	footer .col-sm-3 {
+	width: 27.5%;
+	}
+}
+
+@media(min-width:1200px) {
+	header .col-sm-3  {
+	margin-left: 70px;
+	}
+}
+
+header .col-sm-3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+.advocate-highlight a {
+	text-decoration: none;
+	color: white;
+	}
+
+	</style>
+
+</head>
+<body>
+	<header id="top">
+		<div class="container header-content">
+			<div class="row">
+				<div class="col-sm-3">
+					<img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" style="cursor: pointer;" onclick="window.location='index';" />
+				</div>
+				<div class="col-sm-9">
+					<h1>REGIONAL:<BR>HAITI, CARRIBEAN</h1>
+				</div>
+			<div>
+		</div>
+	</header>
+
+<section id="advocate-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 advocate-header">
+					
+				</div>
+			</div>
+		</div>		
+	</section>
+	
+	<section id="advocate">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+				<h1>ADVOCATE</h1>
+					<p>For the past 10 years Sunnybrook has been dedicated to meeting the needs in multiple communities within 
+					the country of Haiti.  Our partnership began with Promise For Haiti in Pignon which created a lot of 
+					opportunities to meet peoples’ medical, educational, and physical needs leading to the opportunity to share
+					 the gospel.  Because of stepping out in faith in going to Haiti God has blessed us from taking 1 trip per 
+					 year to 4 and expanding our partnerships.  We support both <a href="http://ucihaiti.org/" target="_blank">UCI (United Christians International)</a> in Caiman
+					  Haiti as well as <a href="http://touchofhopehaiti.com/" target="_blank">Touch of Hope</a> in Simonette, Haiti.   Our desire is to come alongside existing 
+					  organizations and expedite their goals by way of physical and financial support.  
+					</p>
+					<div class="advocate-highlight">
+						<h3>Orphan Care</h3>
+						<p> <a href="http://www.tytoogardens.com/" target="_blank">Tytoo Gardens</a> in Simonette is an orphanage and outreach center that Touch of Hope operates and is 
+						the home to 38 orphans that are largely unable to be adopted.   During their time in the orphanage 
+						these kids have had various medical, emotional, and spiritual needs that are addressed in a number of 
+						different ways. Their Transition Program helps the young adults become independent after leaving the 
+						orphanage.</p>
+						<h3>The Church</h3>
+						<p> In the Caiman community evangelizing to the Vodou community has helped eradicate Satan’s influence 
+						on the culture there. In addition they are also making disciples of multiple ages through youth, 
+						children, and adult programs.  In addition, there has been training given to lay pastors in over 60 
+						different churches in the surrounding communities.</p> 
+						<p>At Touch of Hope we continue to support and empower a local community church to be the hands and 
+						feet of Christ to the community of Simonette.</p>
+					</div>
+					<p>If you want to join us in being the hands and feet of Jesus in Haiti, please contact Jason Jackson at
+					<a href="mailto:jasonj@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-%20Haiti%20Interest" target="_top">
+					jasonj@sunnybrookchurch.org</a>.</p>
+				</div>	
+			</div>		
+		</div>	
+	</section>
+
+	<section id="aid-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 aid-header">
+					<h1>AID</h1>
+				</div>
+			</div>
+		</div>		
+	</section>
+			
+	<section id="aid">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5 col-sm-offset-1">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/sioux-city/backpack.jpg">
+					<h2>Nutrition Center</h2>
+					<p>One of the first very visible needs around the Caiman area was combating malnourishment.  In order to do
+					 this in an efficient way, feeding centers were begun where kids and families are able to come and receive 
+					 a meal during the week.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#care">More Info</button>
+					<div id="care" class="collapse">
+						<p>These centers have also provided opportunities to teach the parents to plant 
+					 their own gardens and receive female goats in order to have an opportunity to make an economic investment.</p>
+					<p>Merely handing out food has provided opportunities to share the gospel and to talk about how God’s word 
+					is much greater than the basic necessities that we think that we need here on earth.</p> 
+						<p>Please contact Jason Jackson at
+					<a href="mailto:jasonj@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-%20Haiti%20Nutrition%20Center" target="_top">
+					jasonj@sunnybrookchurch.org</a>, if you are interested in getting more involved.</p>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/sioux-city/meals.jpg">
+					<h2>Clinic</h2>
+					<p>For those that come to the clinic in Caiman, there is a benevolent fund for the ones that are not able 
+					to pay anything.  This gives a lot of university students the opportunity to obtain training and experience
+					 to become better doctors, which in turn gives medical care for the whole community.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#meals">More Info</button>
+					<div id="meals" class="collapse">
+						<p>Touch of Hope’s clinic is located at Tytoo Gardens and is open 3 days a week and sees an average of 
+						25 patients a day for a nominal fee.  They provide most of the medications and treat local emergencies.
+						  There is also a benevolent fund for surgeries and hospital stays.</p>
+						<p>Please contact Jason Jackson at
+					<a href="mailto:jasonj@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-%20Haiti%20Clinic" target="_top">
+					jasonj@sunnybrookchurch.org</a>, if you are interested in getting more involved.</p>
+					</div>
+				</div>		
+			</div>	
+		</div>	
+	</section>
+	
+	<section id="develop-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 develop-header">
+					<h1>DEVELOP</h1>
+				</div>
+			</div>
+		</div>		
+	</section>
+	
+	<section id="develop">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-sm-offset-1">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/sioux-city/classroom.jpg">
+					<h2>Education</h2>
+					<p>At both UCI and Touch of Hope there is an elementary school which are host to 660 and over 1,000 
+					students respectively.  Currently, about half of the children in Haiti do not have the opportunity to 
+					complete a primary education.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#classroom">More Info</button>
+					<div id="classroom" class="collapse">   
+						<p> Touch of Hope believes every child in their community should be able to attend school and therefore
+						 charges a nominal fee (if the parents can afford it).  Breakfast and lunch are provided daily and for 
+						 some it may be the only meal they get that day.   At UCI, the parents are encouraged to work once a 
+						 month at the school to help pay back and invest in their child’s education.  The University at UCI is 
+						 host to one of the leading medical programs in the country along with seminary students, agriculture, 
+						 business, etc.   On all levels of schooling there is a scholarship program that allows students the 
+						 opportunity to go to school.</p>
+						<p>All university scholarship recipients have work study, behavioral, and academic requirements.  There
+						 is a science lab, computer lab, and internet in all the classrooms, dissection lab and clinic, and 
+						 extension training to build up well-rounded, well-trained students.</p>
+						<p>Please contact Jason Jackson at
+					<a href="mailto:jasonj@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-%20Haiti%20Education" target="_top">
+					jasonj@sunnybrookchurch.org</a>, if you are interested in getting more involved.</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/sioux-city/teacher.jpg">
+					<h2>Single Mothers</h2>
+					<p>Touch of Hope has initiated the Starfish Mothers program for single mothers to become entrepreneurs and 
+					create a sustainable future for themselves and their family.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#support">More Info</button>
+					<div id="support" class="collapse">
+						<p>One of unique aspects of this program is that it helps the women realize what true hope looks like 
+						in their life and a lot of times leads to being able to have income for the first time.  In a lot of 
+						cases, this program is crucial to keeping children with their mothers and out of an orphanage.</p>
+					<p>Please contact Jason Jackson at
+					<a href="mailto:jasonj@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-%20Haiti%20Single%20Mothers" target="_top">
+					jasonj@sunnybrookchurch.org</a>, if you are interested in getting more involved.</p>
+					</div>
+				</div>		
+				<div class="col-sm-3">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/sioux-city/5th-grade.jpg">
+					<h2>Agriculture</h2>
+					<p>At UCI they do a female goat give away, educate on raising animals and simple economic program for 
+					investing.  Water pumps are huge in irrigation of crops which 2/3 of the cost is paid back into the program
+					 in 2 years.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#grade">More Info</button>
+					<div id="grade" class="collapse">   
+					<p>The pumps are used cooperatively with 5 farmers who all become educated, trained, and encouraged to 
+					develop an economic plan for how the pump will affect the growing of their crops.  There is also a 
+					reforestation plan by putting some of the cost of the tree back into buying more planting sacks.</p>
+					 <p>Please contact Jason Jackson at
+					<a href="mailto:jasonj@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-%20Haiti%20Agriculture" target="_top">
+					jasonj@sunnybrookchurch.org</a>, if you are interested in getting more involved.</p>
+					</div>
+				</div>	
+			</div>
+		</div>	
+	</section>
+	
+	<footer class="text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-sm-offset-1">
+					<a href="http://unstoppablemission.github.io">
+					<h4></h4>
+					<img src="img/unstoppable-logo-white-shadows4.svg" />
+					<p>...is a ministry of:</p>
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<a href="http://www.sunnybrookchurch.org" target="_blank">
+					<img src="https://unstoppablemission.github.io/img/sunnybrook-logo.png">
+					<h4>Sunnybrook<br>Community Church</h4>
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<h4></h4>
+					<p><a href="http://www.sunnybrookchurch.org" target="_blank">http://www.sunnybrookchurch.org</a></p>
+					<p>5601 Sunnybrook Drive<br>
+					Sioux City, IA, 51106<br>
+					ph: 712-276-5814</p>
+					<p>© 2015 Sunnybrook Community Church. All Rights Reserved.</p>
+				</div>		
+			</div>		
+		</div>	
+	</footer>
+</body>
+</html>
