@@ -271,7 +271,9 @@ header  {
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email Address</label>
                                 <input type="email" class="form-control" placeholder="rusty@email.com" id="email" name="email" required data-validation-required-message="Please enter your email address.">
-                                <p class="help-block text-danger"></p>
+                                <p class="help-block text-danger"><span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span></p>
+    
                             </div>
                         </div>
                         <div class="row control-group">
