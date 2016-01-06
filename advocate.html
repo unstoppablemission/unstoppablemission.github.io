@@ -73,10 +73,11 @@ h1 {
 
 header {
 	background-image: url(https://unstoppablemission.github.io/img/world-map-lights.jpg);
-	background-size: cover;
+	background-size: auto 75%;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-color: black;
+	border-bottom: thin solid gray;
 	}
 
 header h1  {	
@@ -86,6 +87,7 @@ header h1  {
 	width: 100%;
 	text-shadow: 2px 2px 5px #000,
    	 			-2px -2px 5px #000;
+   	margin-bottom: 0px;
 	}
 
 .btn {
@@ -149,25 +151,25 @@ header h1  {
 #local {
 	background-image: url(https://unstoppablemission.github.io/img/sioux-city/sioux-header-collage.jpg);
 	background-size: cover;
-	background-position: 50% 25%;
+	background-position: 50% 0%;
 	background-repeat: no-repeat;
-	height: 60%;
+	height: 40%;
 	}
 
 #regional {
 	background-image: url(https://unstoppablemission.github.io/img/haiti/haiti-header.jpg);
 	background-size: cover;
-	background-position: 50% 75%;
+	background-position: 50% 80%;
 	background-repeat: no-repeat;
-	height: 60%;
+	height: 40%;
 	}	
 
 #global {
 	background-image: url(https://unstoppablemission.github.io/img/ghana/ghana-header.jpg);
 	background-size: cover;
-	background-position: 50% 80%;
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
-	height: 60%;
+	height: 40%;
 	}
 
 
@@ -209,12 +211,20 @@ footer img {
 	background-repeat: no-repeat;
 	}
 	
+	
 	#develop .col-sm-3 {
 	width: 27.5%;
 	}
 	
 	footer .col-sm-3 {
 	width: 27.5%;
+	}
+}
+
+@media(min-width:991px) {
+	
+	header h1  {	
+   	margin-bottom: 50px;
 	}
 }
 
