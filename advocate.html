@@ -71,14 +71,21 @@ h1 {
 	margin-bottom: 50px;
 	}
 
+header {
+	background-image: url(https://unstoppablemission.github.io/img/world-map-lights.jpg);
+	background-size: auto 175%;
+	background-position: 70% 50%;
+	background-repeat: no-repeat;
+	background-color: black;
+	}
+
 header h1  {	
 	text-align: center;
-	font-size: 36pt;
+	font-size: 50pt;
 	font-weight: 400;
 	width: 100%;
 	text-shadow: 2px 2px 5px #000,
    	 			-2px -2px 5px #000;
-   	margin-bottom: 15px;
 	}
 
 .btn {
@@ -102,29 +109,6 @@ header h1  {
 	border-color: #d67827;
 	}
 
-#haiti  {
-	background: black;
-	background-image: url(https://unstoppablemission.github.io/img/haiti/haiti-map-header.jpg);
-	background-size: auto 100%;
-	background-position: 35% 50%;
-	background-repeat: no-repeat;
-	}
-
-#sioux  {
-	background: black;
-	background-image: url(img/sioux-city/sioux-header.jpg);
-	background-size: auto 175%;
-	background-position: 70% 50%;
-	background-repeat: no-repeat;
-	}
-	
-#ghana  {
-	background: black;
-	background-image: url(img/ghana/ghana-map-header.jpg);
-	background-size: auto 175%;
-	background-position: 70% 50%;
-	background-repeat: no-repeat;
-	}
 	
 #logo  {
 	position: relative;
@@ -163,7 +147,15 @@ header h1  {
 	margin: 10px 0px;
 	}
 
-#advocate-header {
+#local {
+	background-image: url(https://unstoppablemission.github.io/img/sioux-city/sioux-header-collage.jpg);
+	background-size: cover;
+	background-position: 50% 25%;
+	background-repeat: no-repeat;
+	height: 60%;
+	}
+
+#regional {
 	background-image: url(https://unstoppablemission.github.io/img/haiti/haiti-header.jpg);
 	background-size: cover;
 	background-position: 50% 75%;
@@ -171,6 +163,13 @@ header h1  {
 	height: 60%;
 	}	
 
+#global {
+	background-image: url(https://unstoppablemission.github.io/img/ghana/ghana-header.jpg);
+	background-size: cover;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+	height: 60%;
+	}
 
 
 footer {
@@ -207,7 +206,7 @@ footer img {
 	
 	header  {
 	background-size: auto 100%;
-	background-position: 85% 50%;
+	background-position: 100% 50%;
 	background-repeat: no-repeat;
 	}
 	
@@ -247,14 +246,37 @@ header .col-sm-3 {
 				<div class="col-sm-3">
 					<img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" style="cursor: pointer;" onclick="window.location='index';" />
 				</div>
-				<div class="col-sm-9">
-					<h1>LOCAL:<BR>SIOUX CITY, IA</h1>
+				<div class="col-sm-9 text-right">
+					<h1>ADVOCATE</H1>
 				</div>
 			<div>
 		</div>
 	</header>
+	
+	<section id="advocate">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+				<h1>Local, Regional, & Global</h1>
+				<p>We believe that as Christians we have a responsibility to be a voice for the oppressed, a place for the
+					orphan, and relief for the widow.  The Lord’s Word is filled with this command.</p>
+					<div class="advocate-highlight">
+						<h3>Isaiah 1:17</h3>
+						<p> Learn to do right; seek justice.  Defend the oppressed.  Take up the cause of the 
+						fatherless; please the case of the widow.</p>  
+						<h3>Isaiah 58:10</h3>
+						<p>If you spend yourselves in behalf of the hungry and satisfy the needs of the oppressed, 
+						then your light will rise in the darkness, and your night will become like the noonday.</p>
+						<h3>James 1:27</h3>
+						<p>Religion that God our Father accepts as pure and faultless is this: to look after the 
+						orphan and widows in their distress and to keep oneself from being polluted by the world.</p>
+					</div>
+				</div>	
+			</div>		
+		</div>	
+	</section>
 
-<section id="advocate-header">
+<section id="local">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 advocate-header">
@@ -268,7 +290,8 @@ header .col-sm-3 {
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-10 col-sm-offset-1">
-				<h1>ADVOCATE</h1>
+				<h1>ADVOCATE - Local</h1>
+				<h2>Sioux City, Iowa</h2>
 					<p>The West Side of Sioux City is 
 					seen as one of the poorest and most diverse communities in the area. However, many people living right here in 
 					Siouxland are not aware of these circumstances or choose to ignore it. Currently, there are many other 
@@ -296,20 +319,8 @@ header .col-sm-3 {
 		</div>	
 	</section>
 
-	<header id="top haiti">
-		<div class="container header-content">
-			<div class="row">
-				<div class="col-sm-3">
-					<img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" style="cursor: pointer;" onclick="window.location='index';" />
-				</div>
-				<div class="col-sm-9">
-					<h1>REGIONAL:<BR>HAITI, CARIBBEAN</h1>
-				</div>
-			<div>
-		</div>
-	</header>
 
-<section id="advocate-header">
+<section id="regional">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 advocate-header">
@@ -323,7 +334,8 @@ header .col-sm-3 {
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-10 col-sm-offset-1">
-				<h1>ADVOCATE</h1>
+				<h1>ADVOCATE - Regional</h1>
+				<h2>Haiti, Caribbean</h2>
 					<p>For the past 10 years Sunnybrook has been dedicated to meeting the needs in multiple communities within 
 					the country of Haiti.  Our partnership began with Promise For Haiti in Pignon which created a lot of 
 					opportunities to meet peoples’ medical, educational, and physical needs leading to the opportunity to share
@@ -355,20 +367,8 @@ header .col-sm-3 {
 		</div>	
 	</section>
 
-	<header id="top ghana">
-		<div class="container header-content">
-			<div class="row">
-				<div class="col-sm-3">
-					<img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" style="cursor: pointer;" onclick="window.location='index';" />
-				</div>
-				<div class="col-sm-9">
-					<h1>GLOBAL:<BR>GHANA, AFRICA</h1>
-				</div>
-			<div>
-		</div>
-	</header>
 
-<section id="advocate-header">
+<section id="global">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 advocate-header">
@@ -382,20 +382,8 @@ header .col-sm-3 {
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-10 col-sm-offset-1">
-				<h1>ADVOCATE</h1>
-					<p>We believe that as Christians we have a responsibility to be a voice for the oppressed, a place for the
-					orphan, and relief for the widow.  The Lord’s Word is filled with this command.</p>
-					<div class="advocate-highlight">
-						<h3>Isaiah 1:17</h3>
-						<p> Learn to do right; seek justice.  Defend the oppressed.  Take up the cause of the 
-						fatherless; please the case of the widow.</p>  
-						<h3>Isaiah 58:10</h3>
-						<p>If you spend yourselves in behalf of the hungry and satisfy the needs of the oppressed, 
-						then your light will rise in the darkness, and your night will become like the noonday.</p>
-						<h3>James 1:27</h3>
-						<p>Religion that God our Father accepts as pure and faultless is this: to look after the 
-						orphan and widows in their distress and to keep oneself from being polluted by the world.</p>
-					</div>
+				<h1>ADVOCATE - Global</h1>
+				<h2>Ghana, Africa</h2>
 					<p>When you join us on mission in Ghana, Africa not only are you choosing to be a voice for the oppressed 
 					and the loving arms for the orphan but you are choosing to be a light of advocacy to your local church, in 
 					your neighborhoods, and in your work places.  When we put our faith in Christ we have also made a 
