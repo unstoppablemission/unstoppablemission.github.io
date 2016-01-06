@@ -112,20 +112,25 @@ header  {
 	background-position: 70% 50%;
 	background-repeat: no-repeat;
 	}
+
 	
 #logo  {
+	position: relative;
 	max-width: 300px;
 	margin: 0px auto;
+	z-index: 1000;
 	}
-.scripture  {
+	
+.advocate-highlight  {
 	font-family: 'Julius Sans One', sans-serif;
 	border: 1px solid gray;
 	padding: 5px 30px;
+	margin: 20px auto 20px auto;
 	color: #d67827;
 	}
 	
 #aid-header {
-/*	background-image: url(https://rustyhutchison.github.io/img/ghana/aid.jpg);  */
+/*	background-image: url(https://unstoppablemission.github.io/img/ghana/aid.jpg);  */
 	background-size: cover;
 	background-position: 50% 80%;
 	background-repeat: no-repeat;
@@ -151,7 +156,7 @@ header  {
 
 
 #advocate-header {
-	background-image: url(https://rustyhutchison.github.io/img/ghana/ghana-header.jpg);
+	background-image: url(https://unstoppablemission.github.io/img/ghana/ghana-header.jpg);
 	background-size: cover;
 	background-position: 50% 80%;
 	background-repeat: no-repeat;
@@ -209,6 +214,10 @@ footer img {
 	}
 }
 
+header .col-sm-3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
 	</style>
 
 </head>
@@ -217,7 +226,7 @@ footer img {
 		<div class="container header-content">
 			<div class="row">
 				<div class="col-sm-3">
-					<a href="index"><img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" /></a>
+					<img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" style="cursor: pointer;" onclick="window.location='index';" />
 				</div>
 				<div class="col-sm-9">
 					<h1>GLOBAL:<BR>GHANA, AFRICA</h1>
@@ -243,7 +252,7 @@ footer img {
 				<h1>ADVOCATE</h1>
 					<p>We believe that as Christians we have a responsibility to be a voice for the oppressed, a place for the
 					orphan, and relief for the widow.  The Lord’s Word is filled with this command.</p>
-					<div class="scripture">
+					<div class="advocate-highlight">
 						<h3>Isaiah 1:17</h3>
 						<p> Learn to do right; seek justice.  Defend the oppressed.  Take up the cause of the 
 						fatherless; please the case of the widow.</p>  
@@ -260,8 +269,13 @@ footer img {
 					proclamation to spend ourselves on behalf of the oppressed to be a light for Christ in the darkest places 
 					of this world.</p>   
 					<p>If you want to join us in being that light and being that voice amongst the nations please contact Jake 
-					Sullivan at 515-291-1542 or via email <a href="mailto:jakes@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20Interest" target="_top">jakes@sunnybrookchurch.org</a>.</p>
-				</div>	
+					Sullivan at 515-291-1542 or via email 
+					<a href="mailto:jakes@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20Interest" target="_top">jakes@sunnybrookchurch.org</a>.</p>
+					<p>If you want to go on a Mission Trip to Ghana with us, checkout our <a href="http://unstoppablemission.github.io/experience-ghana" target="_blank">upcoming trips and fill out the contact form</a>!</p>
+				</div>
+				<div class="col-sm-10 col-sm-offset-1">
+                    <a href="experience-ghana" class="btn btn-lg fa fa-paper-plane">Experience Ghana!</a>
+                </div>  
 			</div>		
 		</div>	
 	</section>
@@ -280,7 +294,7 @@ footer img {
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-5 col-sm-offset-1">
-					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/orphan-care.jpg">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/ghana/orphan-care.jpg">
 					<h2>Orphan Care</h2>
 					<p>In August of 2014 the Kingdom Cares Mission Center opened in Asikuma, Ghana to meet the need of the 
 					orphan.  The Kingdom Cares Mission Center works directly with Social Welfare as well as other outreach 
@@ -300,7 +314,7 @@ footer img {
 					</div>
 				</div>
 				<div class="col-sm-5">
-					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/rehab-discipleship.jpg">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/ghana/rehab-discipleship.jpg">
 					<h2>Rehab/Discipleship Programs</h2>
 					<p>In 2014 during one of our many trips to Cape Coast, Ghana we began an outreach program for those 
 					addicted to drugs and/or those forced into prostitution and sex trafficking due to poverty.
@@ -343,7 +357,7 @@ footer img {
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3 col-sm-offset-1">
-					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/education-younger.jpg">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/ghana/education-younger.jpg">
 					<h2>Education</h2>
 					<p>In Ghana, Africa we have focused on educational development in three particular communities: Asikuma, 
 					Tsipasi, and Cape Coast.</p>  
@@ -368,7 +382,7 @@ footer img {
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/farming.jpg">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/ghana/farming.jpg">
 					<h2>Agriculture</h2>
 					<p>In January of 2015 we began a partnership with <a href="http://www.agrihope.org" target="_blank">
 					Agrihope</a> with the goal of making the Kingdom Cares Mission Campus in Asikuma, Ghana self-sustaining by 
@@ -393,7 +407,7 @@ footer img {
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<img class="img-responsive" src="https://rustyhutchison.github.io/img/ghana/education-older.jpg">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/ghana/education-older.jpg">
 					<h2>Small Business</h2>
 					<p>Helping graduates develop small businesses is a major part of the rehab/discipleship program in Cape 
 					Coast, Ghana.</p>					
@@ -419,7 +433,7 @@ footer img {
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3 col-sm-offset-1">
-					<a href="http://rustyhutchison.github.io">
+					<a href="http://unstoppablemission.github.io">
 					<h4></h4>
 					<img src="img/unstoppable-logo-white-shadows4.svg" />
 					<p>...is a ministry of:</p>
@@ -427,7 +441,7 @@ footer img {
 				</div>
 				<div class="col-sm-3">
 					<a href="http://www.sunnybrookchurch.org" target="_blank">
-					<img src="https://rustyhutchison.github.io/img/sunnybrook-logo.png">
+					<img src="https://unstoppablemission.github.io/img/sunnybrook-logo.png">
 					<h4>Sunnybrook<br>Community Church</h4>
 					</a>
 				</div>
