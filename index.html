@@ -131,7 +131,7 @@ a 	{
 		width: 40px;
 	}
 
-<!-- for navbar -->
+/* navbar css */
 
 body {
   padding: 50px 0 0 0;
@@ -141,7 +141,7 @@ body {
     background-color: transparent;
 }
 .navbar-toggle:hover {
-    color: #d67827;
+    color: #fff;
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default {
@@ -173,6 +173,7 @@ body {
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: rgba(0,0,0,.50) ;
+    color: #d67827;
 }
 
 .navbar-default {
@@ -193,6 +194,39 @@ body {
     background-color: transparent;
 }
 
+.dropdown-menu, .dropdown-menu:hover {
+	background-color: #000;
+	color: #d67827;
+}
+
+.dropdown-menu>li>a {
+    background-color: #000;
+	color: #d67827;
+    text-decoration: none;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: #000;
+	color: #fff;
+    text-decoration: none;
+}
+
+.navbar-default button, .navbar-default button:focus, .navbar-default button:hover, .navbar-default button:active, .navbar-default button:visited {
+    background-color: rgba(0,0,0,.50) ;
+    border-color: transparent;
+}
+
+.navmenu-default .navmenu-nav>li>a:hover, .navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover, .navmenu-default .navmenu-nav>li>a:focus, .navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navmenu-default .navmenu-brand, .navbar-default .navbar-offcanvas .navmenu-brand {
+    color: #fff;
+}
+
+
+
 @media (min-width: 0) {
   .navbar-toggle {
     display: block; /* force showing the toggle */
@@ -210,6 +244,7 @@ body {
   }
 }
 
+/* end of navbar css */
 
 header {
 	height: 75%;
