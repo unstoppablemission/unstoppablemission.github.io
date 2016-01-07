@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Unstoppable Mission - Develop">
+    <meta name="Rusty Hutchison" content="www.rustyhutchison.com">
+	<link rel="icon" href="../img/UM-logo.png">
+
+    <title>Unstoppable Mission</title>
+	<link rel="icon" href="#">
+   
+    <!-- Bootstrap Core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">   
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Custom Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+
+* {
+    box-sizing: border-box;
+	}
+
+*  {
+	/* border: 1px solid red; --> */
+	}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+body   {
+	font-family: 'Raleway','Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #000;
+    font-size: 16px;
+	}
+	
+a 	{
+	text-decoration: none;
+	color: #d67827;
+	}
+
+
+
+.row {
+	height: 100%;
+	position: relative;
+	
+	}
+
+h1 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	}
+
+header {
+	background-image: url(https://unstoppablemission.github.io/img/world-map-lights.jpg);
+	background-size: auto 75%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: black;
+	border-bottom: thin solid gray;
+	}
+
+header h1  {	
+	text-align: center;
+	font-size: 50pt;
+	font-weight: 400;
+	width: 100%;
+	text-shadow: 2px 2px 5px #000,
+   	 			-2px -2px 5px #000;
+   	margin-bottom: 0px;
+	}
+
+.btn {
+	margin-bottom: 15px;
+	}
+
+.btn, .btn-info  {
+	background-color: #d67827;
+	border-color: #d67827;
+	}
+
+.btn, .btn-info:hover {
+    color: #fff;
+    background-color: #d67820;
+    border-color: #d67820;
+    }
+    
+.btn, .btn-info.focus, .btn-info:focus {
+    color: #fff;
+    background-color: #d67827;
+	border-color: #d67827;
+	}
+
+	
+#logo  {
+	position: relative;
+	max-width: 300px;
+	margin: 20px auto;
+	z-index: 1000;
+	}
+
+.advocate-highlight  {
+	font-family: 'Julius Sans One', sans-serif;
+	border: 1px solid gray;
+	padding: 5px 30px;
+	margin: 20px auto 20px auto;
+	color: #d67827;
+	}
+
+.haiti a {
+	text-decoration: none;
+	color: #fff;
+	}
+
+#develop h1 {
+	font-size: 50pt;
+	}
+
+#develop  {
+	padding-bottom: 30px;
+	}
+
+#develop h1{
+	text-align: left;
+	}
+	
+#develop p{
+	margin: 10px 0px;
+	}
+
+#local {
+	background-image: url(https://unstoppablemission.github.io/img/sioux-city/sioux-header-collage.jpg);
+	background-size: cover;
+	background-position: 50% 0%;
+	background-repeat: no-repeat;
+	height: 40%;
+	}
+
+#regional {
+	background-image: url(https://unstoppablemission.github.io/img/haiti/haiti-header.jpg);
+	background-size: cover;
+	background-position: 50% 80%;
+	background-repeat: no-repeat;
+	height: 40%;
+	}	
+
+#global {
+	background-image: url(https://unstoppablemission.github.io/img/ghana/ghana-header.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	height: 40%;
+	}
+
+
+footer {
+	padding-top: 100px;
+	padding-bottom: 50px;
+	border-top: thin solid gray;
+	}
+
+footer img {
+	height: 150px;
+	}
+
+[class*="col-"]{ 
+	padding-bottom: 20px;
+	}
+
+@media(min-width:630px) {
+	#logo  {
+	max-width: 300px;
+	margin: auto 0px;
+	}
+	
+}
+	
+@media(min-width:768px) {
+	.col-sm-9  {
+	position: absolute;
+	bottom: 5%;
+	width: 100%;
+	}
+	
+	header  {
+	background-size: auto 100%;
+	background-position: 85% 50%;
+	background-repeat: no-repeat;
+	}
+	
+	
+	#develop .col-sm-3 {
+	width: 27.5%;
+	}
+	
+	footer .col-sm-3 {
+	width: 27.5%;
+	}
+}
+
+@media(min-width:991px) {
+	
+	header h1  {	
+   	margin-bottom: 50px;
+	}
+}
+
+@media(min-width:1200px) {
+	header .col-sm-3  {
+	margin-left: 70px;
+	}
+}
+
+header .col-sm-3 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+.advocate-highlight a {
+	text-decoration: none;
+	color: white;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<header id="top">
+		<div class="container header-content">
+			<div class="row">
+				<div class="col-sm-3">
+					<img id="logo" class="img-responsive" src="img/unstoppable-logo-white-shadows4.svg" style="cursor: pointer;" onclick="window.location='index';" />
+				</div>
+				<div class="col-sm-9 text-right">
+					<h1>DEVELOP</H1>
+				</div>
+			<div>
+		</div>
+	</header>
+	
+	<section id="aid">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+				<h1>Local, Regional, & Global</h1>
+				<p>If aid (mercy) ministry is <i>giving</i> a hungry person a fish, development is <i>teaching</i> that hungry 
+				person <i>to</i>
+				fish. Development means working with individuals and communities toward a place of greater capability and 
+				sustainability. 
+				</p>
+				</div>	
+			</div>		
+		</div>	
+	</section>
+
+<section id="local">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 advocate-header">
+					
+				</div>
+			</div>
+		</div>		
+	</section>
+				
+	<section id="develop">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<h1>Local - Sioux City, Iowa</h1>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/sioux-city/classroom.jpg">
+					<h2>Classroom Volunteers</h2>
+					<p>Some teachers simply need extra hands in the classroom to assist the students and help with daily 
+					activities. Therefore, individuals from the church congregation volunteer 3-4 hours per week to spend time 
+					in a school classroom. This also allows students to get to the know the individual and may open a door for 
+					a possible mentoring relationship.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#classroom">More Info</button>
+					<div id="classroom" class="collapse">   
+						<p>Please contact Megan Grooters at 712-276-5814 or via email (
+					<a href="mailto:megang@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-Classroom%20Volunteer" target="_top">
+					megang@sunnybrookchurch.org</a>), if you are interested in getting more involved.</p>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/sioux-city/teacher.jpg">
+					<h2>Teacher Support</h2>
+					<p>Teachers are hands on with the students every day of the week and are our main connection to the families. 
+					We see value in connecting with these teachers to not only organize events for the school, but to 
+					acknowledge the needs of the school and to support the staff as well.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#support">More Info</button>
+					<div id="support" class="collapse">
+						<p>We meet on a quarterly basis 
+					throughout the school year with a group of Liberty staff who also attend Sunnybrook Church.</p>
+					<p>Please contact Megan Grooters at 712-276-5814 or via email ( 
+					<a href="mailto:megang@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-Teacher%20Support" target="_top">
+					megang@sunnybrookchurch.org</a>), if you are interested in getting more involved.</p>
+					</div>
+				</div>		
+			</div>
+			<div class="row">
+				<div class="col-sm-5 col-sm-offset-1">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/sioux-city/5th-grade.jpg">
+					<h2>5th Grade</h2>
+					<p>Our goal for 2016 is for the first time to transition the graduating 5th grade class at Liberty 
+					Elementary to West Middle School. This transition process will involve getting to know the students and 
+					their needs as they adjust to middle school.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#grade">More Info</button>
+					<div id="grade" class="collapse">   
+					<p>Our vision is to have classes outside of the normal school day
+					 to minister to these 5th grade students. This vision also involves creating an on-going relationship with 
+					 the administration at West Middle School. Ultimately, we would see this class of students all the way 
+					 through their high school graduation day.</p>
+					 <p>Please contact Megan Grooters at 712-276-5814 or via email (
+					<a href="mailto:megang@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-5th%20Grade%20Volunteer" target="_top">
+					megang@sunnybrookchurch.org</a>), if you are interested in getting more involved.</p>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/sioux-city/ministry.jpg">
+					<h2>Children’s Ministry Program</h2>
+					<p>In Fall of 2016, we envision the kickoff of a weekly night program for the students to attend. 
+					Through this program, students will explore God’s Big Story and experience faith, fellowship, and fun.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#ministry">More Info</button>
+					<div id="ministry" class="collapse">
+					<p>Our 
+					goal is to touch base with these students on a weekly basis in hopes to build long-term relationships while
+					 sharing the Gospel with them.</p>
+					 <p>Please contact Megan Grooters at 712-276-5814 or via email ( 
+					<a href="mailto:megang@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-Children's%20Ministry%20Volunteer" target="_top">
+					megang@sunnybrookchurch.org</a>), if you are interested in getting more involved.</p>
+					</div>
+				</div>		
+			</div>
+		</div>	
+	</section>
+
+<section id="regional">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 advocate-header">
+					
+				</div>
+			</div>
+		</div>		
+	</section>
+	
+	<section id="develop">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+				<h1>Regional - Haiti, Caribbean</h1>
+			  </div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/haiti/education.jpg">
+					<h2>Education</h2>
+					<p>At both UCI and Touch of Hope there is an elementary school which are host to 660 and over 1,000 
+					students respectively.  Currently, about half of the children in Haiti do not have the opportunity to 
+					complete a primary education.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#classroom">More Info</button>
+					<div id="classroom" class="collapse">   
+						<p> Touch of Hope believes every child in their community should be able to attend school and therefore
+						 charges a nominal fee (if the parents can afford it).  Breakfast and lunch are provided daily and for 
+						 some it may be the only meal they get that day.   At UCI, the parents are encouraged to work once a 
+						 month at the school to help pay back and invest in their child’s education.  The University at UCI is 
+						 host to one of the leading medical programs in the country along with seminary students, agriculture, 
+						 business, etc.   On all levels of schooling there is a scholarship program that allows students the 
+						 opportunity to go to school.</p>
+						<p>All university scholarship recipients have work study, behavioral, and academic requirements.  There
+						 is a science lab, computer lab, and internet in all the classrooms, dissection lab and clinic, and 
+						 extension training to build up well-rounded, well-trained students.</p>
+						<p>Please contact Jason Jackson at
+					<a href="mailto:jasonj@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-%20Haiti%20Education" target="_top">
+					jasonj@sunnybrookchurch.org</a>, if you are interested in getting more involved.</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/haiti/single-mothers.jpg">
+					<h2>Single Mothers</h2>
+					<p>Touch of Hope has initiated the Starfish Mothers program for single mothers to become entrepreneurs and 
+					create a sustainable future for themselves and their family.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#support">More Info</button>
+					<div id="support" class="collapse">
+						<p>One of unique aspects of this program is that it helps the women realize what true hope looks like 
+						in their life and a lot of times leads to being able to have income for the first time.  In a lot of 
+						cases, this program is crucial to keeping children with their mothers and out of an orphanage.</p>
+					<p>Please contact Jason Jackson at
+					<a href="mailto:jasonj@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-%20Haiti%20Single%20Mothers" target="_top">
+					jasonj@sunnybrookchurch.org</a>, if you are interested in getting more involved.</p>
+					</div>
+				</div>		
+				<div class="col-sm-3">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/haiti/agriculture.jpg">
+					<h2>Agriculture</h2>
+					<p>At UCI they do a female goat give away, educate on raising animals and simple economic program for 
+					investing.  Water pumps are huge in irrigation of crops which 2/3 of the cost is paid back into the program
+					 in 2 years.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#grade">More Info</button>
+					<div id="grade" class="collapse">   
+					<p>The pumps are used cooperatively with 5 farmers who all become educated, trained, and encouraged to 
+					develop an economic plan for how the pump will affect the growing of their crops.  There is also a 
+					reforestation plan by putting some of the cost of the tree back into buying more planting sacks.</p>
+					 <p>Please contact Jason Jackson at
+					<a href="mailto:jasonj@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20-%20Haiti%20Agriculture" target="_top">
+					jasonj@sunnybrookchurch.org</a>, if you are interested in getting more involved.</p>
+					</div>
+				</div>	
+			</div>
+		</div>	
+	</section>
+
+
+	<section id="global">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 advocate-header">
+					
+				</div>
+			</div>
+		</div>		
+	</section>
+	
+	<section id="develop">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1">
+					<h1>Global - Ghana, Africa</h1>
+			  	</div> 
+				<div class="col-sm-3 col-sm-offset-1">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/ghana/education-younger.jpg">
+					<h2>Education</h2>
+					<p>In Ghana, Africa we have focused on educational development in three particular communities: Asikuma, 
+					Tsipasi, and Cape Coast.</p>  
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#education">More Info</button>
+					<div id="education" class="collapse">
+						<p>In Asikuma, Ghana we help to operate a newly developed school that focuses on educating youth from a
+						particular part of the community that has never had educational access.  Currently the school serves 
+						over 160 kids from the community.</p>
+						<p>The second community in which we are working is Tsipasi, Ghana.  We first entered Tsipasi in 2013 
+						to meet a need for clean water.  In partnership with the Move Project two clean water 
+						wells were opened in January of 2015.  As relationships were developed in the community we began to see
+						the desperate need for education.  Over 97% of the community is illiterate and has never received 
+						education above 5th grade.  In January of 2016 we will be opening the first organized school in Tsipasi
+						as we begin the process of educating the youth in this community.</p>
+						<p>The third community is Cape Coast, Ghana, where we partner with an already existing school called 
+						Blessed Kiddies International.  Blessed Kiddies International supports education for orphaned and 
+						abandoned children.  We have the vision to help Blessed Kiddies construct a new school structure by 
+						2017 and to continue to help support them financially as they reach out to the most vulnerable youth 
+						in their community. </p>
+						<p>There are short term and long term mission opportunities available.   Please contact Jake Sullivan at 
+						515-291-1542 or via email <a href="mailto:jakes@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20Interest" target="_top">jakes@sunnybrookchurch.org</a> if you are interested in getting more involved.</p>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/ghana/farming.jpg">
+					<h2>Agriculture</h2>
+					<p>In January of 2015 we began a partnership with <a href="http://www.agrihope.org" target="_blank">
+					Agrihope</a> with the goal of making the Kingdom Cares Mission Campus in Asikuma, Ghana self-sustaining by 
+					2024.</p>
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#agriculture">More Info</button>
+					<div id="agriculture" class="collapse">
+						<p><a href="http://www.agrihope.org" target="_blank">Agrihope</a> has been working in Zambia over the 
+						past three years and has developed numerous leaders in 
+						a method of farming called, “Farming Gods Way.”  This method of farming takes the natural resources and
+						products that a typical African community would have access to and teaches them how to create higher 
+						yields of crops.</p>
+						<p>In August of 2015 <a href="http://www.agrihope.org" target="_blank">Agrihope</a> assigned one of 
+						their primary leaders in Zambia to move to
+						Asikuma, Ghana for a five year mission to help develop agriculture on the mission campus and to also 
+						help the community with more sustainable farming methods.  Currently we grow beans, maze, and a variety 
+						of citrus fruits.  <a href="http://www.agrihope.org" target="_blank">Agrihope</a> is also helping to 
+						develop an operating chicken and goat farm.</p>
+						<p>There are short term and long term mission opportunities available.   Please contact Jake Sullivan 
+						at 515-291-1542 or via email 
+						<a href="mailto:jakes@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20Interest" target="_top">
+						jakes@sunnybrookchurch.org</a> if you are interested in getting more involved.</p>  
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<img class="img-responsive" src="https://unstoppablemission.github.io/img/ghana/education-older.jpg">
+					<h2>Small Business</h2>
+					<p>Helping graduates develop small businesses is a major part of the rehab/discipleship program in Cape 
+					Coast, Ghana.</p>					
+					<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#business">More Info</button>
+					<div id="business" class="collapse">
+						<p>Not only do we focus on helping the graduates of our programs set up small businesses to provide a 
+						new life away from drugs and prostitution, but we also desire to create business development inside the 
+						Cape Coast Mission Center.</p>
+						<p>These businesses include catering, baking breads and cookies, and 
+						sewing programs for women that produce backpacks, satchel bags, and purses.  These programs are in the infant 
+						stages but long term efforts could produce a self-sustaining model for future outreach programs in Cape Coast.</p> 
+						<p>There are short term and long term mission opportunities available.   Please contact Jake Sullivan at 
+						515-291-1542 or via email 
+						<a href="mailto:jakes@sunnybrookchurch.org?Subject=Unstoppable%20Mission%20Interest" target="_top">
+						jakes@sunnybrookchurch.org</a> if you are interested in getting more involved.</p>			
+					</div>
+				</div>		
+			</div>		
+		</div>	
+	</section>
+
+	<footer class="text-center">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-sm-offset-1">
+					<a href="http://unstoppablemission.github.io">
+					<h4></h4>
+					<img src="img/unstoppable-logo-white-shadows4.svg" />
+					<p>...is a ministry of:</p>
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<a href="http://www.sunnybrookchurch.org" target="_blank">
+					<img src="https://unstoppablemission.github.io/img/sunnybrook-logo.png">
+					<h4>Sunnybrook<br>Community Church</h4>
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<h4></h4>
+					<p><a href="http://www.sunnybrookchurch.org" target="_blank">http://www.sunnybrookchurch.org</a></p>
+					<p>5601 Sunnybrook Drive<br>
+					Sioux City, IA, 51106<br>
+					ph: 712-276-5814</p>
+					<p>© 2015 Sunnybrook Community Church. All Rights Reserved.</p>
+				</div>		
+			</div>		
+		</div>	
+	</footer>
+</body>
+</html>
