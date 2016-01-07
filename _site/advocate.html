@@ -286,6 +286,15 @@ body {
     border-color: transparent;
 }
 
+.navmenu-default .navmenu-nav>.open>a, .navbar-default .navbar-offcanvas .navmenu-nav>.open>a, .navmenu-default .navmenu-nav>.open>a:hover, .navbar-default .navbar-offcanvas .navmenu-nav>.open>a:hover, .navmenu-default .navmenu-nav>.open>a:focus, .navbar-default .navbar-offcanvas .navmenu-nav>.open>a:focus {
+    background-color: transparent;
+    color: #555;
+}
+
+.navmenu-default .navmenu-nav.dropdown-menu, .navbar-default .navbar-offcanvas .navmenu-nav.dropdown-menu {
+    background-color: transparent;
+}
+
 @media (min-width: 0) {
   .navbar-toggle {
     display: block; /* force showing the toggle */
@@ -319,14 +328,16 @@ body {
       <ul class="nav navmenu-nav">
         <li><a href="sioux">Local: Sioux City</a></li>
         <li class="dropdown">
-          <a href="haiti" class="dropdown-toggle" data-toggle="dropdown">Regional: Haiti<b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Regional: Haiti<b class="caret"></b></a>
           <ul class="dropdown-menu navmenu-nav">
+            <li><a href="haiti">Haiti</a></li>
             <li><a href="#">Experience Haiti</a></li>
           </ul>
         </li>
         <li class="dropdown">
           <a href="ghana" class="dropdown-toggle" data-toggle="dropdown">Global: Ghana<b class="caret"></b></a>
           <ul class="dropdown-menu navmenu-nav">
+            <li><a href="ghana">Ghana</a></li>
             <li><a href="experience-ghana">Experience Ghana</a></li>
           </ul>
         </li>
