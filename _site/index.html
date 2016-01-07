@@ -125,6 +125,26 @@ a 	{
 
 /* ------------------------- Everything above this controls 3D animations */
 
+
+.navbar img{
+		display: inline;
+		padding: 0px 0px 25px 15px;
+		width: 40px;
+	}
+
+.navbar-default {
+    border-color: rgba(34,34,34,.95);
+    font-family: 'Raleway','Open Sans','Helvetica Neue',Arial,sans-serif;
+    background-color: rgba(0,0,0,.75);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+	}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #d67827;
+}
+
 header {
 	height: 75%;
 	background-image: url(img/unstoppable-background-no-white-line.jpg);
@@ -133,6 +153,7 @@ header {
 	background-repeat: no-repeat;
 	background-color: black;
 	color: #fff;
+	margin-top: 51px;
 	}
 	
 .no-gutter > [class*=col-] {
@@ -142,7 +163,7 @@ header {
 
 #logo  {
 	position: absolute;
-	top: 16%;
+	top: 21%;
 	width: 300px;
 	left: 50%;
 	margin-left: -150px;
@@ -248,6 +269,32 @@ footer .col-sm-3 {
 
 </head>
 <body>
+
+<!-- Navigation Bar -->
+
+	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  	  <div class="container-fluid">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">menu                    
+      			</button>
+      			<a class="navbar-brand" href="http://www.rustyhutchison.com"><img src="http://unstoppablemission.github.io/img/UM-logo.png" class="img-responsive" /></a>
+   		 	</div>
+    	<div class="collapse navbar-collapse" id="myNavbar">
+      		<ul class="nav navbar-nav">
+        		<li><a href="https://hirerustyhutchison.wordpress.com/a-bit-about-me/" target="_blank">Design</a></li>
+				<li><a href="https://hirerustyhutchison.wordpress.com/content-marketing-video/" target="_blank">Marketing</a></li>
+				<li><a href="https://hirerustyhutchison.wordpress.com/website-design/" target="_blank">Web Development</a></li>
+				<li><a href="https://hirerustyhutchison.wordpress.com/public-speaking/" target="_blank">Speaking</a></li>
+          	</ul>
+      		<ul class="nav navbar-nav navbar-right">
+        		<li><a href="#about-me-background">About Me</a></li>
+        		<li><a href="https://hirerustyhutchison.wordpress.com/resume/" target="_blank">Resume</a></li>
+        		<li><a href="https://hirerustyhutchison.wordpress.com/contact/" target="_blank">Contact</a></li>
+      		</ul>
+    	</div>
+  	  </div>
+	</nav>
+
 
 	<header id="top">
         <div class="container">

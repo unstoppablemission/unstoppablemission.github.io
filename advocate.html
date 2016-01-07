@@ -16,10 +16,12 @@
    
     <!-- Bootstrap Core CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">   
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css">
 	
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	
+	
+	
+	
 
 	<!-- Custom Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -39,6 +41,7 @@
 html,body{
     height: 100%;
     width: 100%;
+    
 }
 
 body {
@@ -78,6 +81,7 @@ header {
 	background-repeat: no-repeat;
 	background-color: black;
 	border-bottom: thin solid gray;
+	margin-top: 50px;
 	}
 
 header h1  {	
@@ -207,6 +211,7 @@ footer img {
 	background-size: auto 100%;
 	background-position: 85% 50%;
 	background-repeat: no-repeat;
+	margin-top: 0px;
 	}
 	
 	
@@ -242,10 +247,98 @@ header .col-sm-3 {
 	color: white;
 	}
 
+<!-- for navbar -->
+
+body {
+  padding: 50px 0 0 0;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-toggle:hover {
+    color: #d67827;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default {
+    background-color: transparent; 
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent; 
+}
+
+.navbar-toggle {
+  	position: fixed;
+	right: 15px;
+}    
+
+.navmenu-default, .navbar-default .navbar-offcanvas {
+    background-color:rgba(0,0,0,1);
+    border-color: #e7e7e7;
+}
+
+.navmenu-default .navmenu-nav>li>a, .navbar-default .navbar-offcanvas .navmenu-nav>li>a {
+    color: #d67827;
+}
+
+.navbar-default {
+    background-color: rgba(0,0,0,.50) ;
+    border-color: transparent;
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+}
+
+
 	</style>
 
 </head>
 <body>
+
+	<div class="navmenu navmenu-default navmenu-fixed-right offcanvas">
+      <a class="navmenu-brand" href="index">Unstoppable Mission</a>
+      <ul class="nav navmenu-nav">
+        <li><a href="advocate">Advocate</a></li>
+        <li><a href="aid">Aid</a></li>
+        <li><a href="develop">Develop</li>
+      </ul>
+      <ul class="nav navmenu-nav">
+        <li><a href="sioux">Local: Sioux City</a></li>
+        <li class="dropdown">
+          <a href="haiti" class="dropdown-toggle" data-toggle="dropdown">Regional: Haiti<b class="caret"></b></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="#">Experience Haiti</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="ghana" class="dropdown-toggle" data-toggle="dropdown">Global: Ghana<b class="caret"></b></a>
+          <ul class="dropdown-menu navmenu-nav">
+            <li><a href="experience-ghana">Experience Ghana</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+        <span>MENU</span>
+      </button>
+    </div>
+
 
 	<header id="top">
 		<div class="container header-content">
@@ -432,5 +525,13 @@ header .col-sm-3 {
 			</div>		
 		</div>	
 	</footer>
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+	
 </body>
 </html>
