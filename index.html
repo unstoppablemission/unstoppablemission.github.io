@@ -48,6 +48,15 @@ a 	{
 
 /* ------------------------- Everything below this controls 3D animations */
 
+.flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+				-ms-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+				filter: FlipH;
+    			-ms-filter: "FlipH";
+			}
+
 /* entire container, keeps perspective */
 .flip-container {
 	perspective: 1500px;
@@ -427,7 +436,7 @@ header {
   <div class="container-fluid">
     <div class="row no-gutter">
       <div class="col-xs-12 col-sm-4">
-  		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  		<div class="flip-container" id="flip-toggle"  ontouchstart="document.querySelector('#flip-toggle').classList.toggle('hover');">
 			<div class="flipper">
 				<div class="front advocate">
 				<!-- front content -->
@@ -444,7 +453,7 @@ header {
   		</div>
 	  </div>
 	  <div class="col-xs-12 col-sm-4">
-  		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  		<div class="flip-container" id="flip-toggle" ontouchstart="document.querySelector('#flip-toggle').classList.toggle('hover');">
 			<div class="flipper">
 				<div class="front aid">
 				<!-- front content -->
@@ -463,7 +472,7 @@ header {
 			</div>
   		</div>
 	  </div><div class="col-xs-12 col-sm-4">
-  		<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+  		<div class="flip-container" id="flip-toggle" ontouchstart="document.querySelector('#flip-toggle').classList.toggle('hover');">
 			<div class="flipper">
 				<div class="front develop">
 				<!-- front content -->
