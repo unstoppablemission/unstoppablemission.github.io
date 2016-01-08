@@ -1,29 +1,8 @@
-function validEmail(email) { // see:
-  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  return re.test(email);
-}
-// get all data in form and return object
-function getFormData() {
-  var elements = document.getElementById("gform").elements; // all form elements
-   console.log(elements); // all form elements
-   console.log(typeof elements);
-   var keys = Object.keys(elements);
-   console.log(keys);
-   var fields = keys.filter(function(k){
-     return k.length > 1 && elements[k].name && elements[k].name.length > 0 ;
-  });
-   console.log(fields);
-   var data = {};
-   fields.forEach(function(k){
-     data[k] = elements[k].value;
-   });
-  console.log(data);
-  return data;
-}
+
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
-  var data = getFormData();         // get the values submitted in the form
+  							         // get the values submitted in the form
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
