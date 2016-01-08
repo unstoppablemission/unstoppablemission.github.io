@@ -1,9 +1,9 @@
 // get all data in form and return object
 function getFormData() {
   var data   = {
-    name    : document.getElementById("name").value,
-    email   : document.getElementById("email").value,
-    message : document.getElementById("message").value
+    name    : document.getElementById("first").value,
+    email   : document.getElementById("last").value,
+    message : document.getElementById("home").value
   }
   console.log(data);
   return data;
