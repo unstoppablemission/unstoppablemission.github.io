@@ -1,8 +1,19 @@
-
+function getFormData() {
+  var elements = document.getElementById("gform").elements; // all form elements
+  var fields = Object.keys(elements).filter(function(k){
+    return k.length > 1 && elements[k].name && elements[k].name.length > 0 ;
+  });
+  var data = {};
+  fields.forEach(function(k){
+    data[k] = elements[k].value;
+  });
+  console.log(data);
+  return data;
+}
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
-  							         // get the values submitted in the form
+  var data = getFormData();         // get the values submitted in the form
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
