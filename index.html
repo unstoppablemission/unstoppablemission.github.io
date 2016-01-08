@@ -48,6 +48,26 @@ a 	{
 
 /* ------------------------- Everything below this controls 3D animations */
 
+
+
+
+
+/* entire container, keeps perspective */
+
+
+.flip-container {
+			-webkit-perspective: 1500;
+			-moz-perspective: 1500;
+			-ms-perspective: 1500;
+			perspective: 1500;
+
+			-ms-transform: perspective(1000px);
+			-moz-transform: perspective(1000px);
+    			-moz-transform-style: preserve-3d; 
+    			-ms-transform-style: preserve-3d; 
+
+		}
+		
 .flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
 				-webkit-transform: rotateY(180deg);
 				-moz-transform: rotateY(180deg);
@@ -55,13 +75,8 @@ a 	{
 				transform: rotateY(180deg);
 				filter: FlipH;
     			-ms-filter: "FlipH";
-			}
+			}		
 
-/* entire container, keeps perspective */
-.flip-container {
-	perspective: 1500px;
-	transform-style: preserve-3d;
-}
 	/*  UPDATED! flip the pane when hovered */
 	.flip-container:hover .back {
 		transform: rotateY(0deg);
