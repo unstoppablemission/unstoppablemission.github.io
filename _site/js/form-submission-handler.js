@@ -4,11 +4,10 @@ function getFormData() {
     first    : document.getElementById("first").value,
     last   : document.getElementById("last").value,
     home : document.getElementById("home").value,
-    email : document.getElementById("email").value
-    phone : document.getElementById("phone").value
-    church : document.getElementById("church").value
+    email : document.getElementById("email").value,
+    phone : document.getElementById("phone").value,
+    church : document.getElementById("church").value,
     reason : document.getElementById("reason").value
-
   }
   console.log(data);
   return data;
