@@ -317,8 +317,8 @@ header  {
 		<script>
 			$(document).ready(function(){
     		$("gform").submit(function(){
-        		document.getElementById('gform').style.display = 'none'; // hide form
-        		document.getElementById('thankyou_message').style.display = 'block';
+        		$("gform").css("display", "none");
+    			$("thankyou_message").css("display", "block");
     			});
 			});
 		</script>
