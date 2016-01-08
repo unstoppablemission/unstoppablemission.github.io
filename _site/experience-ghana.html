@@ -305,20 +305,23 @@ header  {
                         </div>
   					</form>
 
-  <!-- Customise the Thankyou Message People See when they submit the form: -->
-  <div style="display:none;" id="thankyou_message" class="text-center">
-    <h2><em>Thanks</em> for contacting us!<br>
-      We will get back to you soon!</h2>
-  </div>
-
-  
-
-            
-            
-            
+  	<!-- Customise the Thankyou Message People See when they submit the form: -->
+  			<div style="display:none;" id="thankyou_message" class="text-center">
+    			<h2><em>Thanks</em> for contacting us!<br>
+      			We will get back to you soon!</h2>
+  			</div>  
+  			    
         </div>
     </section>
-	
+		
+		<script>
+			$(document).ready(function(){
+    		$("gform").submit(function(){
+        		document.getElementById('gform').style.display = 'none'; // hide form
+        		document.getElementById('thankyou_message').style.display = 'block';
+    			});
+			});
+		</script>
 	
 	
 </body>
