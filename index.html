@@ -60,35 +60,16 @@ a 	{
 			-moz-perspective: 1500;
 			-ms-perspective: 1500;
 			perspective: 1500;
-
-			-ms-transform: perspective(1000px);
-			-moz-transform: perspective(1000px);
-    			-moz-transform-style: preserve-3d; 
-    			-ms-transform-style: preserve-3d; 
-
-		}
-		
-.flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
-				-webkit-transform: rotateY(180deg);
-				-moz-transform: rotateY(180deg);
-				-ms-transform: rotateY(180deg);
-				transform: rotateY(180deg);
-				filter: FlipH;
-    			-ms-filter: "FlipH";
-			}		
-
-	/*  UPDATED! flip the pane when hovered */
-	.flip-container:hover .back {
-		transform: rotateY(0deg);
 	}
-	.flip-container:hover .front {
-	    transform: rotateY(180deg);
+			/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
 	}
 
 .flip-container, .front, .back {
-	height: 200px;
-	
-	}
+	width: 320px;
+	height: 480px;
+}
 
 /* flip speed goes here */
 .flipper {
@@ -101,49 +82,23 @@ a 	{
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-	-webkit-backface-visibility: hidden;
-	transition: 0.6s;
-	transform-style: preserve-3d;
 
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	
 }
 
-/*  UPDATED! front pane, placed above back */
+/* front pane, placed above back */
 .front {
 	z-index: 2;
+	/* for firefox 31 */
 	transform: rotateY(0deg);
-	background-color: transparent;
 }
 
 /* back, initially hidden pane */
 .back {
-	transform: rotateY(-180deg);
-	background-color: black;
-	color: white;
-	}
-
-/* 
-	Some vertical flip updates 
-*/
-.vertical.flip-container {
-	position: relative;
+	transform: rotateY(180deg);
 }
-
-	.vertical .back {
-		transform: rotateX(180deg);
-	}
-
-	.vertical.flip-container:hover .back {
-	    transform: rotateX(0deg);
-	}
-
-	.vertical.flip-container:hover .front {
-	    transform: rotateX(180deg);
-	}
 	
 
 /* ------------------------- Everything above this controls 3D animations */
