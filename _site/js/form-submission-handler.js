@@ -1,17 +1,7 @@
-function validEmail(email) { // see:
-  var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-  return re.test(email);
-}
+
 // get all data in form and return object
 function getFormData() {
-  var elements = document.getElementById("gform").elements; // all form elements
-  var fields = Object.keys(elements).filter(function(k){
-    return k.length > 1 && elements[k].name && elements[k].name.length > 0 ;
-  });
-  var data = {};
-  fields.forEach(function(k){
-    data[k] = elements[k].value;
-  });
+  var data = document.getElementById("gform").elements; // all form elements
   console.log(data);
   return data;
 }
