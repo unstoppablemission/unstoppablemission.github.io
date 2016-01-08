@@ -5,7 +5,6 @@ function validEmail(email) { // see:
 // get all data in form and return object
 function getFormData() {
   var elements = document.getElementById("gform").elements; // all form elements
-  var elements = document.getElementById("gform").elements;
    console.log(elements); // all form elements
    console.log(typeof elements);
    var keys = Object.keys(elements);
