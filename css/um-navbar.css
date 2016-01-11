@@ -1,0 +1,120 @@
+/* --------------------------- navbar css ---------------------------------*/
+
+body {
+  padding: 50px 0 0 0;
+}
+
+.navmenu li, .navmenu-brand {
+	font-size: 25px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+.navbar-toggle:hover {
+    color: #fff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default {
+    background-color: transparent; 
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent; 
+}
+
+.navbar-toggle {
+  	position: fixed;
+	right: 15px;
+}    
+
+.navmenu-default, .navbar-default .navbar-offcanvas {
+    background-color:rgba(0,0,0,1);
+    border-color: #e7e7e7;
+}
+
+.navmenu-default .navmenu-nav>li>a, .navbar-default .navbar-offcanvas .navmenu-nav>li>a {
+    color: #d67827;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default {
+    background-color: rgba(0,0,0,.50) ;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgba(0,0,0,.50) ;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgba(0,0,0,.50) ;
+    color: #d67827;
+}
+
+.navbar-default {
+    background-color: rgba(0,0,0,.50) ;
+    border-color: transparent;
+}
+
+.navbar-default button, .navbar-default button:focus, .navbar-default button:hover, .navbar-default button:active, .navbar-default button:visited {
+    background-color: rgba(0,0,0,.50) ;
+    border-color: transparent;
+}
+.navmenu-default .navmenu-nav>.open>a, .navbar-default .navbar-offcanvas .navmenu-nav>.open>a, .navmenu-default .navmenu-nav>.open>a:hover, .navbar-default .navbar-offcanvas .navmenu-nav>.open>a:hover, .navmenu-default .navmenu-nav>.open>a:focus, .navbar-default .navbar-offcanvas .navmenu-nav>.open>a:focus {
+    background-color: transparent;
+    color: #555;
+}
+
+.navmenu-default .navmenu-nav.dropdown-menu, .navbar-default .navbar-offcanvas .navmenu-nav.dropdown-menu {
+    background-color: transparent;
+}
+
+.dropdown-menu, .dropdown-menu:hover {
+	background-color: #000;
+	color: #d67827;
+}
+
+.dropdown-menu>li>a {
+    background-color: #000;
+	color: #d67827;
+    text-decoration: none;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: #000;
+	color: #fff;
+    text-decoration: none;
+}
+
+.navbar-default button, .navbar-default button:focus, .navbar-default button:hover, .navbar-default button:active, .navbar-default button:visited {
+    background-color: rgba(0,0,0,.50) ;
+    border-color: transparent;
+}
+
+.navmenu-default .navmenu-nav>li>a:hover, .navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover, .navmenu-default .navmenu-nav>li>a:focus, .navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
+    color: #fff;
+    background-color: transparent;
+}
+
+.navmenu-default .navmenu-brand, .navbar-default .navbar-offcanvas .navmenu-brand {
+    color: #fff;
+}
+
+.navmenu, .navbar-offcanvas {
+	width: auto;
+}
+
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0;
+  }
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+}
+
+/* end of navbar css */

@@ -26,7 +26,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
-	<style type="text/css">
+	<link rel="stylesheet" href="css/um-navbar.css">
 
 * {
     box-sizing: border-box;
@@ -245,6 +245,36 @@ header .col-sm-3 {
 
 </head>
 <body>
+
+	<div class="navmenu navmenu-default navmenu-fixed-right offcanvas">
+      <a class="navmenu-brand" href="index">Unstoppable Mission</a>
+      <ul class="nav navmenu-nav">
+        <li><a href="advocate">Advocate</a></li>
+        <li><a href="aid">Aid</a></li>
+        <li><a href="develop">Develop</li>
+        <li><a href="sioux">Local: Sioux City</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Regional: Haiti<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="haiti">Haiti</a></li>
+            <li><a href="#">Experience Haiti</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Global: Ghana<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="ghana">Ghana</a></li>
+            <li><a href="experience-ghana">Experience Ghana</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-top">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body">
+        <span>MENU</span>
+      </button>
+    </div>
 
 	<header id="top">
 		<div class="container header-content">
