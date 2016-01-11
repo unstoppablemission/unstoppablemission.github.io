@@ -46,7 +46,7 @@ a 	{
 	color: #fff;
 	}
 
-/* ------------------------- Everything below this controls flipping tiles */
+/* ------------------------- Everything below this controls 3D animations */
 
 
 
@@ -61,7 +61,7 @@ a 	{
 	-moz-transform: perspective(1500px);
 	-moz-transform-style: preserve-3d; 
     -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d; 
+    /* he didn't inlcude transform-style: preserve-3d;  */
 }
 
 /* - for jquery selector toggle
@@ -157,7 +157,7 @@ a 	{
 		.front {
 			-webkit-transform: rotateY(0deg);
 			-ms-transform: rotateY(0deg);
-			transform: rotateY(0deg);
+			/* he omitted this: transform: rotateY(0deg);  */
 			background: transparent;
 			z-index: 2;
 		}
@@ -176,7 +176,7 @@ a 	{
 
 		
 
-/* ------------------------- Everything above this controls flipping tiles */
+/* ------------------------- Everything above this controls 3D animations */
 
 
 .navbar img{
