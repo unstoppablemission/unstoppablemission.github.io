@@ -118,7 +118,7 @@ body {
 }
 
 
-/* To fix chrome bug on offcanvas navbar: */
+/* To fix chrome bug and firefox on initial push for offcanvas navbar: */
 
 .navmenu-fixed-right {
     left: auto !important;
