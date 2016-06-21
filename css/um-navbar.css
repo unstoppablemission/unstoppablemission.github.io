@@ -117,4 +117,16 @@ body {
   }
 }
 
+/* To fix chrome bug on offcanvas navbar: */
+
+.navmenu-fixed-right {
+    left: auto !important;
+}
+
+.navbar-toggle {
+    left: auto !important;
+}
+
+body.canvas-sliding, body.canvas-slid {left: auto !important;}
+
 /* end of navbar css */
