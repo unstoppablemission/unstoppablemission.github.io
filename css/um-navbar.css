@@ -117,7 +117,8 @@ body {
   }
 }
 
-/* To fix chrome bug and firefox bug for initial push on offcanvas navbar: */
+
+/* To fix chrome bug on offcanvas navbar: */
 
 .navmenu-fixed-right {
     left: auto !important;
@@ -128,5 +129,4 @@ body {
 }
 
 body.canvas-sliding, body.canvas-slid {left: auto !important;}
-
 /* end of navbar css */
