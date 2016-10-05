@@ -25,6 +25,296 @@
     <link rel="stylesheet" href="css/um.css">
     <link rel="stylesheet" href="css/um-navbar.css">
 
+   <style type="text/css">
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+	color: #fff;
+}
+
+body   {
+	font-family: 'Raleway','Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 300;
+	}
+	
+	
+a {
+    text-decoration: none;
+    color: #d67827;
+}
+
+/* ------------------------- Everything below this controls 3D animations */
+
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	-webkit-perspective: 1500;
+	-moz-perspective: 1500;
+	-ms-perspective: 1500;
+	perspective: 1500px;
+	
+	-ms-transform: perspective(1500px);
+	-moz-transform: perspective(1500px);
+	-moz-transform-style: preserve-3d; 
+    -ms-transform-style: preserve-3d;
+    /* he didn't inlcude transform-style: preserve-3d;  */
+}
+
+/* - for jquery selector toggle
+			.flip-container:hover .flipper, .flip-container.hover .flipper, #flip-toggle.flip .flipper {
+				-webkit-transform: rotateY(180deg);
+				-moz-transform: rotateY(180deg);
+				-ms-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+				filter: FlipH;
+    			-ms-filter: "FlipH";
+			}
+			*/
+
+	/*  UPDATED! flip the pane when hovered */
+	/* START: Accommodating for IE */
+	.flip-container:hover .back, .flip-container.hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+	}
+	
+
+	.flip-container:hover .front, .flip-container.hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+	}
+		
+		/* END: Accommodating for IE */
+
+	.flip-container, .front, .back {
+	/* might potentially have to put a width in here */
+	height: 200px;
+	}
+
+	/* flip speed goes here */
+	.flipper {
+			-webkit-transition: 0.6s;
+			-webkit-transform-style: preserve-3d;
+			-ms-transition: 0.6s;
+
+			-moz-transition: 0.6s;
+			-moz-transform: perspective(1000px);
+			-moz-transform-style: preserve-3d;
+			-ms-transform-style: preserve-3d;
+
+			transition: 0.6s;
+			transform-style: preserve-3d;
+
+			position: relative;
+	}
+
+
+	/* hide back of pane during swap */
+	
+	.front, .back {
+			-webkit-backface-visibility: hidden;
+			-moz-backface-visibility: hidden;
+			-ms-backface-visibility: hidden;
+			backface-visibility: hidden;
+
+		    -webkit-transition: 0.6s;
+		    -webkit-transform-style: preserve-3d;
+		    -webkit-transform: rotateY(0deg);
+
+		    -moz-transition: 0.6s;
+		    -moz-transform-style: preserve-3d;
+		    -moz-transform: rotateY(0deg);
+
+		    -o-transition: 0.6s;
+		    -o-transform-style: preserve-3d;
+		    -o-transform: rotateY(0deg);
+
+		    -ms-transition: 0.6s;
+		    -ms-transform-style: preserve-3d;
+		    -ms-transform: rotateY(0deg);
+
+		    transition: 0.6s;
+		    transform-style: preserve-3d;
+		    transform: rotateY(0deg);
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+		}
+
+
+		/*  UPDATED! front pane, placed above back */
+		.front {
+			-webkit-transform: rotateY(0deg);
+			-ms-transform: rotateY(0deg);
+			/* he omitted this: transform: rotateY(0deg);  */
+			background: transparent;
+			z-index: 2;
+		}
+
+		/* back, initially hidden pane */
+		
+		.back {
+			background: black;
+			-webkit-transform: rotateY(-180deg);
+		    -moz-transform: rotateY(-180deg);
+		    -o-transform: rotateY(-180deg);
+		    -ms-transform: rotateY(-180deg);
+		    transform: rotateY(-180deg);
+		    color: white;
+		}
+		
+		.back:hover {
+		background: #e7e7e7;
+		}
+
+		
+
+/* ------------------------- Everything above this controls 3D animations */
+
+
+.navbar img{
+		display: inline;
+		padding: 0px 0px 25px 15px;
+		width: 40px;
+	}
+
+
+header {
+	height: 75%;
+	background-image: url(img/unstoppable-background-no-white-line.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-color: black;
+	color: #fff;
+	}
+	
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+	}
+
+#logo  {
+	position: absolute;
+	top: 17%;
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;
+	}
+
+#about .back h3 {
+	margin-top: 10px;
+	}
+
+
+.aid {
+	background-image: url(../img/kids-faces.jpg);
+	background-size: cover;
+	}
+
+.develop {
+	background-image: url(../img/kid-face.jpg);
+	background-size: cover;
+	}
+
+.advocate {
+	background-image: url(../img/handholding-cross.jpg);
+	background-size: cover;
+	}
+
+.local {
+	background-image: url(../img/sioux-city/5th-grade.jpg);
+	background-size: cover;
+	background-position: 50% 60%;
+	}
+
+.regional {
+	background-image: url(../img/haiti-homepage.jpg);
+	background-size: cover;
+	background-position: 50% 80%;
+	}
+
+.global {
+	background-image: url(../img/global-homepage3.jpg);
+	background-size: cover;
+	background-position: 100% 50%;
+	}
+
+.back {
+	padding: 10px;	
+	}
+	
+.back p {
+	color: #d67827;
+	}	
+
+.aid-back {
+	padding: 3px 10px;
+	}
+
+h2  {
+	
+	text-align: center;
+	font-size: 36pt;
+	font-weight: 700;
+   	
+	}
+
+#about .front h2{
+	margin-top: 5%;
+	}
+
+hr  {
+	color: #d67827;
+	}
+
+	
+footer {
+	margin-top: 100px;
+	margin-bottom: 50px;
+	}
+
+footer img {
+	height: 150px;
+	}
+
+
+@media(min-width:768px) {
+	
+footer .col-sm-3 {
+	width: 27.5%;
+	}
+	
+header {
+	margin-top: 0px;
+	}
+	
+}
+
+@media(min-width:1300px) {
+	
+
+
+.flip-container, .front, .back {
+	min-height: 165px;
+	}
+
+}
+
+</style>
+	
 </head>
 <body>
 
